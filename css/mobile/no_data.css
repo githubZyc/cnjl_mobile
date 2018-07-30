@@ -1,0 +1,11 @@
+.no-data {
+	text-align: center;
+	line-height: 44px;
+	padding: 30px;
+	margin-top: 20px;
+}
+
+.no-data p {
+	font-size: 15px;
+	color: #222;
+}

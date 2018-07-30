@@ -1,0 +1,78 @@
+.mui-bar-nav {
+	box-shadow: none;
+	background: #fff;
+}
+
+.mui-bar-nav h1 {
+	font-size: 18px;
+	color: #000;
+}
+
+.mui-bar-nav button.mui-btn-link {
+	font-size: 15px;
+	color: #222;
+	border: none;
+}
+
+.mui-bar-nav a {
+	font-size: 15px;
+	color: #222;
+}
+
+.mui-content {
+	margin-top: 21px;
+	background: #F2F2F2;
+}
+
+.mui-input-row {
+	margin-top: 11px;
+}
+
+.mui-input-row input[type="text"] {
+	background: #fff;
+	border: none;
+}
+
+.mui-input-group .mui-input-row:after {
+	height: 0;
+}
+
+
+/*保存成功 提示框*/
+
+.mui-popup-buttons {
+	background: #fff;
+	padding: 0 15px;
+	    height: 55px;
+}
+
+.mui-popup-button {
+	height: 35px;
+	line-height: 35px;
+	background: #ff4510;
+	color: #fff;
+}
+.mui-popup-inner {
+    padding: 15px 15px 25px 15px;
+}
+.mui-popup-inner div {
+	color: #222;
+	font-size: 14px;
+}
+
+.mui-popup-button:last-child {
+	border-radius: 17px;
+}
+
+.mui-popup-button:first-child {
+	border-radius: 17px;
+	background: #e1e1e1;
+	color: #222;
+	margin-right: 15px;
+}
+.mui-popup-inner:after{
+	height: 0;
+}
+.mui-popup-button.mui-popup-button-bold{
+	font-weight: normal;
+}

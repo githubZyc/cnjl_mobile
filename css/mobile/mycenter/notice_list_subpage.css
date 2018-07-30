@@ -1,0 +1,79 @@
+.mui-bar-nav {
+	box-shadow: none;
+	background: #fff;
+	padding-right: 15px;
+}
+
+.mui-bar-nav h1 {
+	font-size: 18px;
+	color: #000;
+}
+.mui-bar-nav a {
+	font-size: 15px;
+	color: #222;
+}
+
+/*公告列表*/
+.notice-cont {
+	display: none;
+}.notice-cont h5{
+	font-size: 14px;
+	color: #aaa;
+	margin: 33px 15px 16px 15px;
+}
+.notice-cont div{
+	background-color: #fff;
+	padding: 1px 15px;
+	margin: 0 15px;
+	border-radius: 8px;
+}
+.notice-cont div h1{
+	font-size: 18px;
+	color: #222;
+	margin: 17px 0 13px 0;
+}
+
+.notice-cont div p{
+	font-size: 12px;
+	color: #aaa;
+	margin-bottom: 17px;
+}
+.notice-cont .mui-table-view a{
+	font-size: 13px;
+	color: #222;
+}
+.mui-table-view:before{
+	background-color: #E1E1E1;
+}
+.mui-table-view:after{
+	height: 0;
+}
+
+.mui-table-view .mui-table-view-cell{
+	height: 45px;
+	line-height: 45px;
+	padding: 0;
+}
+.mui-table-view-cell>a:not(.mui-btn){
+	padding: 0;
+	margin: 0;
+}
+.mui-navigate-right:after, .mui-push-right:after{
+	right: 0;
+}
+/*暂无公告*/
+.no-notice-cont{
+	text-align: center;
+} 
+.no-notice-cont img{
+	/*text-align: center;*/
+	margin-top: 150px;
+}
+
+.no-notice-cont span{
+	display: block;
+	margin-top: 24px;
+	font-size: 15px;
+	color: #222;
+}
+

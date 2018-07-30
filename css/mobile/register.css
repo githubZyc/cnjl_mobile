@@ -1,0 +1,180 @@
+html,
+body,
+header,
+.mui-content {
+	background: #fff;
+}
+
+header a {
+	color: #000;
+}
+
+header h1 {
+	color: #000;
+	font-size: 18px;
+}
+
+.mui-bar-nav.mui-bar {
+	box-shadow: none;
+	background: #fff;
+}
+
+.mui-content-padded {
+	margin-top: 57px;
+}
+
+#reg-form input {
+	padding: 0;
+}
+
+.mui-input-group:before,
+.mui-input-group:after {
+	height: 0;
+}
+
+.mui-input-group .mui-input-row {
+	height: 55px;
+	line-height: 55px;
+}
+
+.mui-input-group .mui-input-row:after {
+	left: 0;
+	background-color: #e1e1e1;
+}
+
+.mui-input-group,
+.reg-btn,
+.agreement {
+	padding: 0 22px;
+}
+
+.mui-input-group .mui-input-row.code-inp input[type="number"] {
+	width: 55%;
+}
+
+.mui-input-group .mui-input-row button:before {
+	position: absolute;
+	right: 100px;
+	bottom: 5px;
+	top: 5px;
+	width: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #e1e1e1;
+}
+
+.mui-input-group .mui-input-row button {
+	width: 35%;
+	padding: 0px;
+	font-size: 15px;
+	color: #ff4510;
+	float: right;
+	line-height: 55px;
+	text-align: center;
+	    border: none;
+    background: #fff;
+}
+
+.reg-btn button.mui-btn.mui-btn-block {
+	background: linear-gradient(to right, #ff4510, #ff6900);
+	height: 45px;
+	border-radius: 22px;
+	border: none;
+	line-height: 45px;
+	padding: 0;
+	margin-top: 30px;
+}
+
+.reg-btn .link-area {
+	text-align: center;
+}
+
+.reg-btn .link-area a:first-child {
+	font-size: 14px;
+	color: #FF4510;
+	margin-right: 55px;
+}
+
+.reg-btn .link-area a:last-child {
+	font-size: 14px;
+	color: #aaa;
+}
+
+.other_login_btn {
+	position: relative;
+	width: 94%;
+	bottom: 3px;
+}
+
+.other_login_title {
+	padding: 0 15px;
+	margin-top: 11px;
+	display: flex;
+	justify-content: space-around;
+	background: #fff;
+	padding: 14px 0;
+	line-height: 13px;
+}
+
+.other_login_title span {
+	font-size: 13px;
+	color: #a1a5a5;
+}
+
+.other_login_title img {
+	margin-top: 5px;
+}
+
+.other_login_icon {
+	text-align: center;
+}
+
+.other_login_icon img:first-child {
+	margin-right: 50px;
+}
+
+.mui-input-row.mui-password .mui-input-clear~.mui-icon-clear {
+	right: 20px;
+	top: 17px;
+}
+
+.mui-input-row .mui-input-password~.mui-icon-eye {
+	top: 17px;
+}
+
+.mui-input-row .mui-input-password~.mui-icon-eye.mui-active {
+	color: #ff530a;
+}
+
+.code-inp.mui-input-row .mui-input-clear~.mui-icon-clear {
+	right: 100px;
+	top: 17px;
+}
+
+:-ms-input-placeholder {
+	font-size: 15px;
+	color: #ccc;
+}
+
+::-webkit-input-placeholder {
+	font-size: 15px;
+	color: #ccc;
+}
+
+.agreement {
+	margin: 15px 0 30px 0;
+}
+
+.agreement p {
+	font-size: 12px;
+	color: #222;
+}
+
+.agreement a {
+	font-size: 12px;
+	color: #FF4510;
+}
+.mui-input-row .mui-input-clear~.mui-icon-clear{
+	top: 18px;
+}

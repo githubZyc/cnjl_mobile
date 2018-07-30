@@ -1,0 +1,60 @@
+.mui-content>.mui-table-view:first-child {
+    margin-top: 0;
+}
+.mui-table-view .mui-media-object{
+	max-width: 100px;
+	height: 100px;
+	line-height: 100px;
+}
+.mui-table-view .mui-media-body{
+	font-size: 18px;
+	color: #222;
+	font-weight: 600;
+}
+
+.mui-table-view .mui-media-body p{
+	font-size: 14px;
+	color: #aaa;
+	font-weight: normal;
+	line-height: 18px;
+	margin-top: 8px;
+}
+
+.mui-table-view .mui-media-body p:last-child{
+	color: #ccc;
+}
+.mui-table-view-cell:after{
+	left: 125px;
+}
+
+.mui-table-view:after,.mui-table-view:before{
+	height: 0;
+}
+/*底部按钮*/
+
+.mui-bar-tab.mui-bar {
+	box-shadow: none;
+	border-top: 1px solid #E1E1E1;
+	z-index: 9999;
+	bottom: 0;
+}
+
+.mui-bar-tab .mui-tab-item:first-child {
+	background-color: #fff;
+	color: #a2a6a8;
+	font-size: 15px;
+}
+.mui-bar-tab .mui-tab-item:nth-child(2) {
+	background-color: #ff7e00;
+	color: #fff;
+	font-size: 17px;
+}
+.mui-bar-tab .mui-tab-item:nth-child(3) {
+	background-color: #ff4510;
+	color: #fff;
+	font-size: 17px;
+}
+
+.mui-bar-tab .mui-tab-item:first-child i {
+	font-style: normal;
+}

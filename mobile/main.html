@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0启动页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.css">
+		<style>
+			.checked {
+				display: none;
+			}
+			
+			.unchecked {
+				display: inline-block;
+			}
+			
+			.mui-bar .mui-active .checked {
+				display: inline-block;
+			}
+			
+			.mui-bar .mui-active .unchecked {
+				display: none;
+			}
+			/*
+			 * 购物车数量标识
+			 */
+			
+			#shopCar {
+				position: relative;
+			}
+			
+			#shopCar e {
+				background: #dd524d;
+				position: absolute;
+				right: 20px;
+				top: 0;
+				color: #fff;
+				font-size: 12px;
+				border-radius: 50px;
+				text-align: center;
+				z-index: 10000;
+				width: 16px;
+				height: 16px;
+				line-height: 16px;
+			}
+			
+			.mui-bar {
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+			}
+			
+			.mui-bar-tab .mui-tab-item.mui-active {
+				color: #ff4510;
+			}
+			.mui-bar-tab .mui-tab-item .mui-icon{
+				height:auto ;
+			}
+		</style>
+	</head>
+	<body>
+		<header id="main-header" class="mui-bar mui-bar-nav">
+			<h1 id="title" class="mui-title"></h1>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<a id="defaultTab" class="mui-tab-item mui-active" href="index.html">
+				<img class="mui-icon unchecked" src="../images/home_icon_03.png" />
+				<img class="mui-icon checked" src="../images/tab_03.png" />
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a id="m_b_channel" class="mui-tab-item" href="shop_car.html">
+				<img class="mui-icon unchecked" src="../images/tab_08.png" />
+				<img class="mui-icon checked" src="../images/car_icon_07.png" />
+				<span class="mui-tab-label">购物车</span>
+			</a>
+			<a class="mui-tab-item" href="set_shop.html">
+				<img class="mui-icon unchecked" src="../images/tab_10.png" />
+				<img class="mui-icon checked" src="../images/setshop_checked_03.png" />
+				<span class="mui-tab-label">开店</span>
+			</a>
+			<a class="mui-tab-item" href="my_center.html">
+				<img class="mui-icon unchecked" src="../images/tab_05.png" style="width:23px;height:21px;" />
+				<img class="mui-icon checked" src="../images/mycenter_icon_33.png" style="width:23px;height:21px;" />
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+	</body>
+	<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>lo
+	<script src="../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/mobile/main.js" type="text/javascript" charset="utf-8"></script>
+</html>

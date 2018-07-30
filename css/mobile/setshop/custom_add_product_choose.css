@@ -1,0 +1,54 @@
+.mui-bar-nav{
+	box-shadow: none;
+	background: #fff;
+}
+.mui-bar-nav h1{
+	font-size: 18px;
+	color: #000;
+}
+.mui-bar-nav a{
+	color: #000;
+}
+.mui-bar-nav~.mui-content {
+    padding-top: 65px;
+}
+.mui-content>.mui-table-view:first-child{
+	margin-top: 11px;
+}
+.mui-table-view:before,.mui-table-view:after{
+	height: 0;	
+}
+.mui-table-view .mui-table-view-cell {
+	height: 50px;
+	line-height: 50px;
+	padding: 0 0 0 15px;
+}
+
+.mui-table-view a {
+	font-size: 16px;
+	color: #222222;
+	
+}
+.mui-table-view-cell>a:not(.mui-btn){
+	padding: 0;
+	margin: 0;
+}
+.mui-table-view-cell>a:not(.mui-btn).mui-active{
+	background: #fff;
+}
+.mui-table-view-radio .mui-table-view-cell>a:not(.mui-btn){
+	margin-right: 0;
+}
+.mui-table-view-radio .mui-table-view-cell.mui-selected .mui-navigate-right:after{
+	content: '\e442';
+}
+
+.mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after{
+	color: #FF4510;
+	font-weight: normal;
+	font-size: 25px;
+}
+.mui-table-view-radio .mui-table-view-cell:after{
+	    background-color: #e1e1e1;
+}
+

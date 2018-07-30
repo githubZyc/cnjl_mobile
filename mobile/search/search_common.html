@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>菜鸟网络-吉犁APPV1.0-公共搜索页面</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/mobile/no_data.css"/>
+		<link rel="stylesheet" href="../../css/mobile/search/search_common.css" />
+	</head>
+
+	<body bgcolor="#F2F2F2">
+		<header class="mui-bar mui-bar-nav">
+			<div class="mui-input-row mui-search mui-pull-left">
+				<input id="searchParam" type="search" class="mui-input-clear" placeholder="商品名称/商品条码">
+			</div>
+			<button class="mui-pull-right" v-tap="search">搜索</button>
+		</header>
+		<div class="mui-content">
+			<div class="hot-search">
+				<h5>热门搜索</h5>
+				<ul>
+					<li class="mui-pull-left"  v-tap="hotWordSerach($event,'排骨')">排骨</li>
+					<li class="mui-pull-left " v-tap="hotWordSerach($event,'猪肉')">猪肉</li>
+					<li class="mui-pull-left " v-tap="hotWordSerach($event,'瓜')">瓜</li>
+					<li class="mui-pull-left " v-tap="hotWordSerach($event,'排骨')">排骨</li>
+					<li class="mui-pull-left " v-tap="hotWordSerach($event,'精品')">精品</li>
+				</ul>
+			</div>
+			<div class="history-search">
+				<h5>历史搜索</h5>
+				<div class="no-data" v-show="searchHistory.length == 0">
+					<img src="../../images/tab_10.png"/>
+					<p>暂无数据</p>
+				</div>
+				<ul class="mui-table-view" v-show="searchHistory.length != 0" v-for="history in searchHistory | limitBy 6">
+					<li class="mui-table-view-cell " v-tap="historySerach(history)">
+						{{history}}
+					</li>
+				</ul>
+			</div>
+			<div class="empty-btn">
+				<button v-tap="clearHistory">清空搜索纪录</button>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mobile/search/search_common.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta charset="utf-8">
+        <title>头像剪裁</title>
+        <link rel="stylesheet" type="text/css" href="../css/cropper.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/mui.css"/>
+        <style type="text/css">
+        	header{
+        		color:black ;
+        	}
+        </style>
+    </head>
+    <body>
+    	<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">图片裁剪</h1>
+			<button class="mui-btn mui-btn-link mui-pull-right" v-tap="selectImg" >选取</button>
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		</header>
+    	<!-- 用一个块元素(容器)包装图像或画布元素 -->
+		<div class="mui-content" style="margin-top: 20%;">
+		    <div class="box" style="height:400px;width: 100%;">
+				<img id="image" :src="zipImg">
+			</div>
+		</div>
+    </body>
+    <script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/cropper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/app_cropper.js" type="text/javascript" charset="utf-8"></script>
+</html>

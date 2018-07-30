@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-开店子页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/mobile/setshop/upload_business_license.css" />
+	</head>
+
+	<body style="background: #fff;">
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">营业执照</h1>
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		</header>
+		<div class="mui-content">
+			<div class="idcard">
+				<div class="idcard-picture" id="idcard-business" v-tap="idBusiness"> 
+					<img :src="businessLicenseBase64"  onerror="src='../../images/business_license_03.png'" width="250px" height="180px"/>
+				</div>
+				<p>上传营业执照</p>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<div class="save-btn">
+				<button class="mui-btn mui-btn-block mui-btn-primary" v-tap="uploadBLicense">确定</button>
+			</div>
+		</nav>
+		<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mobile/setshop/upload_business_license.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

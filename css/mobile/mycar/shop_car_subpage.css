@@ -1,0 +1,330 @@
+.mui-bar-nav {
+	box-shadow: none;
+	background: #fff;
+}
+
+.mui-bar-nav h1 {
+	font-size: 18px;
+	color: #000;
+}
+
+.mui-bar-nav button.mui-btn-link {
+	font-size: 15px;
+	color: #222;
+	border: none;
+}
+
+.mui-bar-nav a {
+	font-size: 15px;
+	color: #222;
+}
+
+
+/*头部结束*/
+
+
+/*购物车列表*/
+
+.car-list ul.mui-table-view {
+	margin-top: 11px;
+}
+
+.shop-name.mui-table-view-cell {
+	padding: 0;
+}
+
+.mui-table-view:before {
+	height: 0;
+}
+
+.shop-name img {
+	vertical-align: text-top;
+	margin-right: 8px;
+}
+
+.shop-name .mui-navigate-right:after,
+.mui-push-right:after {
+	right: 6px;
+}
+
+.shop-name input {
+	text-align: right;
+	padding-right: 22px;
+	color: #FF4510;
+	font-size: 15px;
+}
+
+.mui-table-view .mui-media-object {
+	/*line-height: 89px;*/
+	max-width: 70px;
+	height: auto;
+	margin-top: 3px;
+}
+
+.mui-table-view .mui-media-body {
+	color: #222;
+	font-size: 15px;
+}
+
+.mui-table-view .mui-media-body p {
+	color: #aaa;
+	font-size: 13px;
+	margin: 5px 0 10px 0;
+}
+
+.mui-table-view .mui-media-body span {
+	color: #ff4510;
+	font-size: 18px;
+}
+
+.shop-goods.mui-table-view-cell {
+	padding: 15px;
+	position: relative;
+}
+
+.mui-table-view-cell:after {
+	left: 0;
+	background-color: #e1e1e1;
+}
+
+.mui-table-view .mui-media-object.mui-pull-left {
+	margin-right: 10px;
+}
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	margin: 0;
+	padding: 0;
+}
+
+.mui-table-view-cell>a:not(.mui-btn).mui-active {
+	background: transparent;
+}
+
+.mui-table-view:after {
+	height: 0;
+}
+
+.shop-goods .mui-row {
+	line-height: 30px;
+}
+
+.goods-price {
+	text-align: right;
+}
+
+.goods-price p {
+	font-size: 13px;
+	color: #222;
+}
+/*下架*/
+.has-down{
+	width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.6);
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.has-down img{
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+/*点击编辑之后的样式*/
+
+
+/*checkbox*/
+
+.mui-checkbox input[type=checkbox]:checked:before,
+.mui-radio input[type=radio]:checked:before {
+	color: #FF4510;
+}
+
+ .mui-checkbox input[type=checkbox] {
+	top: 28px;
+	left: -2px;
+	display: inline-block;
+}
+
+.mui-table-view-cell img.mui-media-object.mui-pull-left {
+	margin-left: 30px;
+}
+
+
+/*数量输入框*/
+
+.mui-row .mui-numbox {
+	width: 85px;
+	padding: 0 25px;
+	height: 30px;
+}
+
+.mui-table-view .mui-table-view-cell .mui-input-row input.mui-input-numbox {
+	text-align: center;
+	line-height: 33px;
+	height: 33px;
+	font-size: 13px;
+	color: #000;
+}
+
+.mui-numbox [class*=btn-numbox] {
+	width: 25px;
+}
+
+.mui-radio input[type=radio]:checked:before {
+	content: '\e442'
+}
+
+.mui-checkbox input[type=checkbox]:checked:before,
+.mui-radio input[type=radio]:checked:before {
+	color: #ff4e0c;
+}
+
+
+/*删除弹框*/
+
+.mui-popup-title {
+	font-size: 15px;
+	text-align: left;
+	color: #222;
+	font-weight: normal;
+}
+
+.mui-popup-title span {
+	font-size: 30px;
+	color: #b1b1b1;
+}
+
+.mui-popup-title+.mui-popup-text {
+	font-size: 13px;
+	color: #aaa;
+	text-align: left;
+}
+
+.mui-popup-inner:after {
+	height: 0;
+}
+
+.mui-popup-button:after {
+	width: 0;
+}
+
+.mui-popup-button.mui-popup-button-bold {
+	font-weight: normal;
+}
+
+.mui-popup-buttons {
+	background-color: #fff;
+	height: 55px;
+	padding: 0 15px;
+}
+
+.mui-popup-buttons .mui-popup-button {
+	font-size: 15px;
+	width: 125px;
+	height: 45px;
+	line-height: 45px;
+	color: #2e3133;
+	background-color: #e1e1e1;
+	border-radius: 5px;
+}
+
+.mui-popup-button:first-child {
+	background: linear-gradient(to right, #ff4510, #ff6900);
+	color: #fff;
+	margin-right: 10px;
+}
+
+
+/*结算*/
+
+.mui-bar-tab {
+	table-layout: auto;
+}
+
+.mui-bar-tab.mui-bar {
+	box-shadow: none;
+	height: 50px;
+}
+
+.mui-bar-tab.mui-bar:before {
+	position: absolute;
+	right: 0;
+	left: 0;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #e1e1e1;
+	top: -1px;
+}
+.mui-bar-tab.mui-bar:after {
+	position: absolute;
+	right: 0;
+	left: 0;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #e1e1e1;
+	top: -1px;
+}
+
+.mui-bar-tab .mui-checkbox span {
+	font-size: 13px;
+	color: #AAA;
+}
+
+.mui-bar-tab .mui-checkbox input[type=checkbox] {
+	position: initial;
+	margin-top: 10px;
+	margin-left: 15px;
+	vertical-align: sub;
+}
+
+.mui-bar-tab button.mui-pull-right {
+	border: none;
+	width: 124px;
+	height: 50px;
+	background: linear-gradient(to right, #ff4510, #ff6900);
+	border-radius: inherit;
+	color: #fff;
+	font-size: 17px;
+}
+.mui-bar-tab button.mui-pull-right[disabled=disabled]{
+	background: #E1E1E1;
+	color: #a2a6a8;
+}
+.mui-bar-tab button.mui-pull-right.del-btn{
+	background: transparent;
+	color: #aaa;
+	font-size: 13px;
+}
+.mui-bar-tab button.mui-pull-right.del-btn img{
+	margin-right: 6px;
+	vertical-align: middle;
+}
+.mui-bar-tab div div.mui-pull-right {
+	margin-right: 15px;
+}
+
+.mui-bar-tab div.mui-pull-right p:first-child {
+	font-size: 11px;
+	color: #aaa;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-align: right;
+}
+
+.mui-bar-tab div.mui-pull-right p:last-child {
+	font-size: 17px;
+	color: #FF4510;
+	margin-bottom: 0;
+}
+.show{
+	display: block;
+}
+
+.hide{
+	display: none;
+}

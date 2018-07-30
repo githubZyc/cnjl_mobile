@@ -1,0 +1,16 @@
+.mui-bar-nav {
+	box-shadow: none;
+	background: #fff;
+}
+.mui-bar{
+	padding-left: 10px;
+	padding-right: 15px;
+}
+.mui-bar-nav h1 {
+	font-size: 18px;
+	color: #000;
+}
+
+.mui-bar-nav a {
+	color: #000;
+}

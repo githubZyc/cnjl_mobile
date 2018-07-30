@@ -1,0 +1,270 @@
+.mui-bar-nav {
+	box-shadow: none;
+	background: #fff;
+}
+
+.mui-bar-nav h1 {
+	font-size: 18px;
+	color: #000;
+}
+
+.mui-bar-nav button.mui-btn-link {
+	font-size: 15px;
+	color: #222;
+	border: none;
+}
+
+.mui-bar-nav a {
+	font-size: 15px;
+	color: #222;
+}
+
+
+/*头部结束*/
+
+.mui-bar-nav~.mui-content {
+    padding-top: 44px;
+    padding-bottom: 50px;
+}
+/*订单地址*/
+
+.order-address ul.mui-table-view .mui-media-body {
+	font-size: 16px;
+	color: #222;
+	margin-top: 7px;
+}
+
+.order-address ul.mui-table-view .mui-media-body p {
+	font-size: 14px;
+	color: #aaa;
+}
+
+
+
+/*订单列表*/
+
+.order-list>ul.mui-table-view:not(:first-child),
+.order-mess ul.mui-table-view ,.order-price ul.mui-table-view{
+	margin-top: 11px;
+	padding: 1px 0;
+}
+/*订单状态*/
+.order-status .mui-table-view-cell{
+	background: linear-gradient(to right,#ff4510,#ff6900);
+	padding: 15px;
+} 
+.order-status .mui-table-view-cell{
+	background: linear-gradient(to right,#ff4510,#ff6900);
+	padding: 15px;
+} 
+.order-status .mui-table-view-cell .mui-media-body{
+	font-size: 15px;
+	color: #fff;
+}
+.order-status .mui-table-view-cell .mui-media-body span{
+	color: #ffff66;
+}.order-status .mui-table-view-cell .mui-media-body p{
+	font-size: 12px;
+	color: #fff;
+} 
+.shop-name.mui-table-view-cell {
+	padding: 0;
+}
+
+.mui-table-view:before {
+	height: 0;
+}
+
+
+.mui-table-view .mui-media-object {
+	/*line-height: 89px;*/
+	max-width: 70px;
+	height: auto;
+	margin-top: 3px;
+}
+.order-address .mui-table-view .mui-media-object {
+	/*line-height: 89px;*/
+	max-width: 70px;
+	height: auto;
+	margin-top: 8px;
+}
+
+.mui-table-view .mui-media-body {
+	color: #222;
+	font-size: 15px;
+}
+
+.mui-table-view .mui-media-body p {
+	color: #aaa;
+	font-size: 13px;
+	margin: 5px 0 10px 0;
+}
+
+.mui-table-view .mui-media-body span {
+	color: #ff4510;
+	font-size: 18px;
+}
+
+.shop-goods.mui-table-view-cell {
+	padding: 15px;
+}
+
+.shop-goods.mui-table-view-cell i {
+	font-size: 12px;
+	color: #aaa;
+	margin-top: 10px;
+}
+
+.shop-goods.mui-table-view-cell:after {
+	left: 105px;
+	;
+	background-color: #e1e1e1;
+}
+
+.mui-table-view-cell:after {
+	left: 0;
+	background-color: #e1e1e1;
+}
+
+.mui-table-view .mui-media-object.mui-pull-left {
+	margin-right: 20px;
+}
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	margin: 0;
+	padding: 0;
+}
+
+.mui-table-view-cell>a:not(.mui-btn).mui-active {
+	background: transparent;
+}
+
+.mui-table-view:after {
+	height: 0;
+}
+
+.shop-goods .mui-checkbox input[type=checkbox] {
+	display: none;
+}
+
+.shop-goods .mui-row {
+	line-height: 30px;
+}
+
+.goods-price {
+	text-align: right;
+}
+
+.goods-price p {
+	font-size: 13px;
+	color: #222;
+}
+
+
+/*订单信息*/
+
+.order-mess li {
+	font-size: 15px;
+	color: #aaa;
+}
+.order-mess li span{
+	color: #222;
+	text-align: right;
+}
+
+.order-mess .mui-table-view-cell{
+	padding: 0 15px;
+	margin-top: 16px;
+}
+.order-mess .mui-table-view-cell:last-child{
+	margin-bottom: 17px;
+}
+.order-mess .mui-table-view-cell:after {
+    height: 0;
+}
+.mui-radio input[type=radio]:checked:before {
+	content: '\e442'
+}
+
+.mui-checkbox input[type=checkbox]:checked:before,
+.mui-radio input[type=radio]:checked:before {
+	color: #ff4e0c;
+}
+
+.mui-radio input[type=radio] {
+	right: 12px;
+}
+/*商品价格*/
+.order-price .mui-table-view-cell:after {
+    height: 0;
+}
+.order-price .mui-table-view-cell {
+    font-size: 15px;
+    color: #aaa;
+    padding: 0 15px;
+    margin-top: 16px;
+}
+.order-price .mui-table-view-cell span{
+    color: #222;
+}
+
+.order-price .mui-table-view-cell:last-child{
+    text-align: right;
+    font-size: 13px;
+    color: #222;
+    padding: 14px 15px;
+}
+.order-price .mui-table-view-cell:last-child strong{
+    text-align: right;
+    font-size: 15px;
+    color: #FF4510;
+}
+.order-price .mui-table-view-cell:last-child:before{
+   position: absolute;
+    right: 0;
+    top: 0;
+    left: 15px;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #E1E1E1;
+}
+
+/*确认配送*/
+
+.mui-bar-tab {
+	table-layout: auto;
+}
+
+.mui-bar-tab.mui-bar {
+	box-shadow: none;
+	height: 50px;
+	line-height: 50px;
+}
+
+.mui-bar-tab.mui-bar:before {
+	position: absolute;
+	right: 0;
+	left: 0;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #e1e1e1;
+	top: -1px;
+}
+
+.mui-bar-tab button.mui-pull-right {
+	border: none;
+	width: 90px;
+	height: 35px;
+	background: linear-gradient(to right, #ff4510, #ff6900);
+	border-radius: 5px;
+	color: #fff;
+	    margin-top: 7px;
+    margin-right: 15px;
+}
+
+
+

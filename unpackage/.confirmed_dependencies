@@ -1,0 +1,255 @@
+{
+  "mobile/main.html": {
+    "resources": [
+      "mobile/index.html",
+      "mobile/my_center.html"
+    ],
+    "refer": [
+      "mobile/set_shop.html",
+      "mobile/my_center.html",
+      "mobile/index.html",
+      "mobile/shop_car.html",
+      "mobile/login.html"
+    ]
+  },
+  "mobile/set_shop.html": {
+    "resources": [
+      "mobile/set_shop_subpage.html"
+    ],
+    "refer": [
+      "mobile/set_shop_subpage.html"
+    ]
+  },
+  "mobile/my_center.html": {
+    "resources": [
+      "mobile/my_center_subpage.html"
+    ],
+    "refer": [
+      "mobile/my_center_subpage.html"
+    ]
+  },
+  "mobile/index.html": {
+    "resources": [
+      "mobile/index_subpage.html"
+    ],
+    "refer": [
+      "mobile/index_subpage.html"
+    ]
+  },
+  "mobile/shop_car.html": {
+    "resources": [
+      "mobile/shop_car_subpage.html"
+    ],
+    "refer": [
+      "mobile/shop_car_subpage.html"
+    ]
+  },
+  "mobile/my_center_subpage.html": {
+    "refer": [
+      "mobile/mycenter/personal_message.html",
+      "mobile/mycenter/setting.html",
+      "mobile/mycenter/address_manage.html",
+      "mobile/mycenter/about_us.html",
+      "mobile/mycenter/my_wallet/my_wallet_index.html",
+      "mobile/mycenter/my_customer.html"
+    ]
+  },
+  "mobile/index_subpage.html": {
+    "refer": [
+      "mobile/search/search_common.html",
+      "mobile/search/search_list.html",
+      "mobile/setshop/goods_details.html",
+      "mobile/http_web_view.html",
+      "mobile/goods_details/goods_details_main.html"
+    ]
+  },
+  "mobile/search/search_common.html": {
+    "refer": [
+      "mobile/search/search.html"
+    ]
+  },
+  "mobile/search/search_list.html": {
+    "refer": [
+      "mobile/setshop/goods_details.html",
+      "mobile/search/search_common.html",
+      "mobile/search/search_list_subpage.html"
+    ],
+    "resources": [
+      "mobile/search/search_list_subpage.html"
+    ]
+  },
+  "mobile/mycenter/personal_message.html": {
+    "refer": [
+      "mobile/cropper.html",
+      "mobile/mycenter/tel_edit.html"
+    ]
+  },
+  "mobile/set_shop_subpage.html": {
+    "refer": [
+      "mobile/setshop/add_shop.html",
+      "mobile/setshop/shop_index.html"
+    ]
+  },
+  "mobile/mycenter/address_manage.html": {
+    "refer": [
+      "mobile/mycenter/add_address.html"
+    ]
+  },
+  "mobile/mycenter/setting.html": {
+    "refer": [
+      "mobile/mycenter/privacy_statement.html",
+      "mobile/mycenter/message_setting.html"
+    ]
+  },
+  "mobile/search/search.html": {
+    "refer": [
+      "mobile/setshop/goods_details.html"
+    ]
+  },
+  "mobile/setshop/goods_management.html": {
+    "resources": [
+      "mobile/setshop/goods_management_subpage.html"
+    ],
+    "refer": [
+      "mobile/setshop/goods_management_subpage.html"
+    ]
+  },
+  "mobile/setshop/shop_index.html": {
+    "refer": [
+      "mobile/setshop/goods_management.html",
+      "mobile/setshop/storehouse_add_goodsclassify.html",
+      "mobile/setshop/custom_add_product.html",
+      "mobile/setshop/shop_setting.html"
+    ]
+  },
+  "mobile/setshop/storehouse_add_goodsclassify.html": {
+    "refer": [
+      "mobile/setshop/goods_management_goodsedit.html",
+      "mobile/setshop/storehouse_add_goodsclassify_subpage.html"
+    ],
+    "resources": [
+      "mobile/setshop/storehouse_add_goodsclassify_subpage.html"
+    ]
+  },
+  "mobile/setshop/add_shop.html": {
+    "refer": [
+      "mobile/setshop/shop_index.html"
+    ]
+  },
+  "mobile/login.html": {
+    "refer": [
+      "mobile/register.html"
+    ]
+  },
+  "mobile/setshop/goods_management_subpage.html": {
+    "refer": [
+      "mobile/setshop/custom_add_product.html",
+      "mobile/setshop/my_shop_commodity_edit.html"
+    ]
+  },
+  "mobile/setshop/my_shop_commodity_edit.html": {
+    "refer": [
+      "mobile/setshop/custom_add_product_choose.html"
+    ]
+  },
+  "mobile/setshop/custom_add_product.html": {
+    "refer": [
+      "mobile/setshop/custom_add_product_choose.html"
+    ]
+  },
+  "mobile/setshop/shop_setting.html": {
+    "refer": [
+      "mobile/mycenter/tel_edit.html",
+      "mobile/setshop/upload_idcard.html",
+      "mobile/setshop/upload_business_license.html",
+      "mobile/setshop/upload_foodcard.html",
+      "mobile/setshop/business_position.html",
+      "mobile/setshop/manage_person_list.html",
+      "mobile/mycenter/service_term.html"
+    ]
+  },
+  "mobile/setshop/business_position.html": {
+    "refer": [
+      "mobile/search/search.html",
+      "mobile/setshop/business_position_subpage.html"
+    ],
+    "resources": [
+      "mobile/setshop/business_position_subpage.html"
+    ]
+  },
+  "mobile/setshop/manage_person_list.html": {
+    "refer": [
+      "mobile/setshop/add_manage_person.html"
+    ]
+  },
+  "mobile/register.html": {
+    "refer": [
+      "mobile/mycenter/service_term.html"
+    ]
+  },
+  "mobile/setshop/goods_details.html": {
+    "resources": [
+      "mobile/setshop/goods_details_subpage.html"
+    ],
+    "refer": [
+      "mobile/setshop/goods_details_subpage.html"
+    ]
+  },
+  "mobile/search/search_list_subpage.html": {
+    "refer": [
+      "mobile/setshop/goods_details.html",
+      "mobile/goods_details/goods_details_main.html"
+    ]
+  },
+  "mobile/setshop/storehouse_add_goodsclassify_subpage.html": {
+    "refer": [
+      "mobile/setshop/goods_management_goodsedit.html"
+    ]
+  },
+  "mobile/goods_details/goods_details_main.html": {
+    "resources": [
+      "mobile/goods_details/tab-top-subpage-1.html"
+    ],
+    "refer": [
+      "mobile/goods_details/tab-top-subpage-1.html",
+      "mobile/goods_details/tab-top-subpage-4.html",
+      "mobile/goods_details/tab-top-subpage-3.html"
+    ]
+  },
+  "mobile/goods_details/tab-top-subpage-3.html": {
+    "refer": [
+      "mobile/cookbook/cookbook_details.html"
+    ]
+  },
+  "mobile/mycenter/my_wallet/my_wallet_index.html": {
+    "refer": [
+      "mobile/mycenter/my_wallet/balance_put.html",
+      "mobile/mycenter/my_wallet/red_packet_record.html",
+      "mobile/mycenter/my_wallet/balance_record.html"
+    ]
+  },
+  "mobile/mycenter/my_wallet/red_packet_record.html": {
+    "resources": [
+      "mobile/mycenter/my_wallet/red_packet_record_subpage.html"
+    ],
+    "refer": [
+      "mobile/mycenter/my_wallet/red_packet_record_subpage.html"
+    ]
+  },
+  "mobile/mycenter/my_wallet/balance_record.html": {
+    "resources": [
+      "mobile/mycenter/my_wallet/balance_record_subpage.html"
+    ],
+    "refer": [
+      "mobile/mycenter/my_wallet/balance_record_subpage.html"
+    ]
+  },
+  "mobile/mycenter/my_customer.html": {
+    "resources": [
+      "mobile/mycenter/my_customer_subpage.html"
+    ],
+    "refer": [
+      "mobile/mycenter/my_customer_subpage.html"
+    ]
+  }
+}

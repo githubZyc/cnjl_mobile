@@ -1,0 +1,44 @@
+.mui-bar-nav {
+	box-shadow: none;
+	background: #fff;
+}
+
+.mui-bar-nav h1 {
+	font-size: 18px;
+	color: #000;
+}
+
+.mui-bar-nav button.mui-btn-link {
+	font-size: 15px;
+	color: #222;
+	border: none;
+}
+
+.mui-bar-nav a {
+	font-size: 15px;
+	color: #222;
+}
+
+.mui-content {
+	background: #F2F2F2;
+}
+
+.mui-input-row {
+	margin-top: 11px;
+}
+
+.mui-input-row input[type="text"] {
+	background: #fff;
+	border: none;
+	color: #222;
+	font-size: 16px;
+}
+::-webkit-input-placeholder{
+	font-size: 16px;
+	color: #ccc;
+}
+.mui-input-group .mui-input-row:after,.mui-input-group:after {
+	height: 0;
+}
+
+

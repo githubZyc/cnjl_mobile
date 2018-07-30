@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-商品营养成分页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/mobile/no_data.css" />
+		<link rel="stylesheet" href="../../css/mobile/goods_details/tab-top-subpage-4.css" />
+	</head>
+	<body>
+		<div class="mui-content">
+			
+			<div class="no-data" v-show="commodityNutrition==null">
+				<img src="../../images/tab_10.png"/>
+				<p>暂无数据</p>
+			</div>
+			
+			<template v-if="commodityNutrition!=null">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell" style="color: #222;background-color: #ffffdf;">
+						热量(千卡)<span class="mui-pull-right">{{commodityNutrition.heatQuantity}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						硫安素(毫克)<span class="mui-pull-right">{{commodityNutrition.thiophen}}</span>
+					</li>
+					<li class="mui-table-view-cell" style="color: #222;background-color: #ffffdf;">
+						钙(毫克)<span class="mui-pull-right">{{commodityNutrition.ca}}</span>
+					</li>
+					<li class="mui-table-view-cell" style="color: #222;background-color: #ffffdf;">
+						蛋白质(克)<span class="mui-pull-right">{{commodityNutrition.protein}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						核黄素(毫克)<span class="mui-pull-right">{{commodityNutrition.riboflavin}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						镁(毫克)<span class="mui-pull-right">{{commodityNutrition.mg}}</span>
+					</li>
+					<li class="mui-table-view-cell" style="color: #222;background-color: #ffffdf;">
+						脂肪(克)<span class="mui-pull-right">{{commodityNutrition.fat}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						铁(毫克)<span class="mui-pull-right">{{commodityNutrition.fe}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						碳水化合物(克)<span class="mui-pull-right">{{commodityNutrition.carbohydrate}}</span>
+					</li>
+					<li class="mui-table-view-cell" style="color: #222;background-color: #ffffdf;">
+						维生素C(毫克)<span class="mui-pull-right">{{commodityNutrition.vc}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						锰(毫克)<span class="mui-pull-right">{{commodityNutrition.mn}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						膳食纤维(克)<span class="mui-pull-right">{{commodityNutrition.dietaryFiber}}</span>
+					</li>
+					<li class="mui-table-view-cell" style="color: #222;background-color: #ffffdf;">
+						维生素E(毫克)<span class="mui-pull-right">{{commodityNutrition.ve}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						锌(毫克)<span class="mui-pull-right">{{commodityNutrition.zn}}</span>
+					</li>
+					<li class="mui-table-view-cell" style="color: #222;background-color: #ffffdf;">
+						维生素A(毫克)<span class="mui-pull-right">{{commodityNutrition.va}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						胆固醇(毫克)<span class="mui-pull-right">{{commodityNutrition.cholesterol}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						铜(毫克)<span class="mui-pull-right">{{commodityNutrition.cu}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						胡萝卜(微克)<span class="mui-pull-right">{{commodityNutrition.carotene}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						钾(毫克)<span class="mui-pull-right">{{commodityNutrition.k}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						磷(毫克)<span class="mui-pull-right">{{commodityNutrition.p}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						视黄醇当量(微克)<span class="mui-pull-right">{{commodityNutrition.re}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						钠(毫克)<span class="mui-pull-right">{{commodityNutrition.na}}</span>
+					</li>
+					<li class="mui-table-view-cell">
+						硒(毫克)<span class="mui-pull-right">{{commodityNutrition.se}}</span>
+					</li>
+				</ul>
+			</template>
+			
+		</div>
+	</body>
+	<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mobile/goods_details/tab-top-subpage-4.js" type="text/javascript" charset="utf-8"></script>
+</html>

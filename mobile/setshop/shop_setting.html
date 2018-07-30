@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-店铺设置页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/mui.picker.css" />
+		<link rel="stylesheet" href="../../css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../../css/mobile/setshop/shop_setting.css" />
+	</head>
+
+	<body style="background: #f2f2f2;">
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">店铺设置</h1>
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view list-personal">
+				<li class="mui-table-view-cell">
+					<div class="mui-input-row">
+						<label>门牌名</label>
+						<input id="shopName" type="text" class="" :placeholder="shop.shopName == null ? '请输入门牌名称' : shop.shopName">
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-input-row">
+						<label>注册名称</label>
+						<input id="corporateName" type="text" class="" :placeholder="shop.corporateName == null ? '请输入注册名称' : shop.corporateName">
+					</div>
+				</li>
+			</ul>
+			<ul class="mui-table-view list-personal">
+				<li class="mui-table-view-cell">
+					<div class="mui-input-row">
+						<label>法人代表</label>
+						<input id="corporationName" type="text" class="" :placeholder="shop.corporationName == null ? '请输入法人名称' : shop.corporationName">
+					</div>
+				</li>
+				<li class="mui-table-view-cell" v-tap="goValidCorporationPhone(shop.corporationPhone)">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>法人代表手机号</label>
+							<input type="text" readonly="readonly" class="" :placeholder="!isAddCorporationPhone ? '未设置' : shop.corporationPhone">
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell" v-tap="goUpLoadIdCard">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>法人代表身份证</label>
+							<input type="text" readonly="readonly" class="" :placeholder="isUploadIdCard ? '已上传' : '未上传'">
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view list-personal">
+				<li class="mui-table-view-cell" id="business-license" v-tap="goBusinessLicense">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>营业执照 </label>
+							<input type="text" readonly="readonly" class="" :placeholder="isUploadBusinessLicense ? '已上传' : '未上传'">
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell" id="food-card" v-tap="goFoodCard">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>食品流通许可证</label>
+							<input type="text" readonly="readonly" class="" :placeholder="isUploadFootCard ? '已上传' : '未上传'">
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view list-personal" id="get-position" >
+				<li class="mui-table-view-cell" v-tap="goPosition">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>营业位置</label>
+							<input type="text" readonly="readonly" class="" :placeholder="shop.shopAddress == null ? '获取' : shop.shopAddress">
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-input-row">
+						<label>经营面积(m2)</label>
+						<input id="shopArea" type="number" class="" :placeholder="shop.shopArea == null ? '请输入门店经营面积' : shop.shopArea">
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-input-row">
+						<label>经营范围</label>
+						<input id="scopeOfOperation" type="text" class="" :placeholder="shop.scopeOfOperation == null ? '请输入门店经营范围' : shop.scopeOfOperation">
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-input-row">
+						<label>送货范围（公里）</label>
+						<input id="distributionScope" type="number" class="" :placeholder="shop.distributionScope == null ? '请输入门店经营范围' : shop.distributionScope">
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-input-row">
+						<label>配送金额（元）</label>
+						<input id="distributionPrice" type="number" class="" :placeholder="shop.distributionPrice == null ? '请输入配送金额' : shop.distributionPrice">
+					</div>
+				</li>
+				<li class="mui-table-view-cell" v-tap="showPayChoose">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>是否在平台付款</label>
+							<input id="isOnlinePay" type="text"  readonly="readonly" class="" :placeholder="shop.isOnlinePay == null ? '未设置' : shop.isOnlinePay == 1 ? '是' : '否'">
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell" v-tap="goManageShopAdmin">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>管理人员</label>
+							<input type="text" readonly="readonly" class="">
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell" v-tap="goValidFinancePhone(shop.financePhone)">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>财务电话</label>
+							<input type="text" readonly="readonly" class="" :placeholder="!isAddFinancePhone ? '未设置' : shop.financePhone">
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-input-row">
+						<label>财务支付宝</label>
+						<input id="financeAliPayNumber" type="text" class="" :placeholder="shop.financeAliPayNumber==null?'请输入财务支付宝':shop.financeAliPayNumber">
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-input-row">
+						<label>财务姓名</label>
+						<input id="financeName" type="text" class="" :placeholder="shop.financeName==null?'请输入财务姓名':shop.financeName">
+					</div>
+				</li>
+			</ul>
+			<form class="mui-input-group">
+				<div class="mui-input-row mui-checkbox mui-left">
+					<label>签阅《<span @tap.stop="goServiceterm">用户服务条款</span>》</label>
+					<input name="checkbox" value="Item 1" type="checkbox" :checked="isRead">
+				</div>
+			</form>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<div class="save-btn">
+				<button class="mui-btn mui-btn-block mui-btn-primary" v-tap="saveShopSetting">保存</button>
+			</div>
+		</nav>
+		<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mui.picker.js"></script>
+		<script src="../../js/mui.poppicker.js"></script>
+		<script src="../../js/city.data-3.js" type="text/javascript"></script>
+		<script src="../../js/mobile/setshop/shop_setting.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

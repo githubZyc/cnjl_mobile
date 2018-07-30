@@ -1,0 +1,233 @@
+.mui-bar-nav{
+	box-shadow: none;
+	background: #fff;
+}
+.mui-bar-nav h1{
+	font-size: 18px;
+	color: #000;
+}
+.mui-bar-nav a{
+	color: #000;
+}
+.mui-bar-nav button.mui-btn.mui-btn-link{
+	color: #000;
+	font-size: 15px;
+}
+
+/*搜索框*/
+nav.mui-bar-nav {
+	top: 65px;
+}
+nav.mui-bar-nav button{
+	font-size: 15px;
+	background: #fff;
+	padding: 0;
+	color: #aaa;
+	border: none;
+	margin-top: 11px;
+}
+button:enabled:active{
+	color: #aaa;
+	background-color: #fff;
+}
+.mui-content {
+	background-color: #fff;
+}
+
+.mui-bar-nav~.mui-content {
+	padding-top: 105px;
+}
+
+
+/*搜索框*/
+
+.mui-input-row {
+	padding: 0 15px;
+}
+
+.mui-input-row input {
+	background: #f2f2f2;
+	height: 26px;
+	border-radius: 13px;
+	line-height: 26px;
+}
+
+.mui-search .mui-placeholder {
+	line-height: 26px;
+}
+
+.mui-search.mui-active:before {
+	left: 22px;
+}
+
+.mui-input-row.mui-search .mui-icon-clear {
+	top: 2px;
+}
+
+.mui-bar .mui-input-row .mui-input-clear~.mui-icon-clear {
+	right: 20px;
+}
+/*上下架商品切换*/
+/*商品列表*/
+
+.mui-table-view .mui-media-object {
+	/*line-height: 89px;*/
+	max-width: 70px;
+	height: auto;
+	margin-top: 3px;
+}
+
+.mui-table-view .mui-media-body {
+	color: #222;
+	font-size: 15px;
+}
+
+.mui-table-view .mui-media-body p {
+	color: #aaa;
+	font-size: 13px;
+	margin: 5px 0 10px 0;
+}
+
+.mui-table-view .mui-media-body span {
+	color: #ff4510;
+	font-size: 18px;
+}
+
+.mui-table-view-cell {
+	padding: 15px;
+}
+
+.mui-table-view-cell:after {
+	left: 105px;
+}
+
+.mui-table-view .mui-media-object.mui-pull-left {
+	margin-right: 20px;
+}
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	margin: 0;
+	padding: 0;
+}
+
+.mui-table-view-cell>a:not(.mui-btn).mui-active {
+	background: transparent;
+}
+
+.mui-table-view:after {
+	height: 0;
+}
+
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+	border-color: #E1E1E1;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #FF4510;
+	border-color: #FF4510;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	
+}
+.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar{
+	background-color: #FF4510;
+}
+/*右箭頭*/
+.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after{
+	font-size: 25px;
+}
+.mui-checkbox input[type=checkbox]{
+	display: none;
+}
+/*点击编辑之后的样式*/
+/*checkbox*/
+.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
+	color: #FF4510;
+}
+.edit-css .mui-checkbox input[type=checkbox]{
+	top: 28px;
+    left: 0px;
+    display: inline-block;
+}
+/*.edit-css.mui-table-view-cell a.mui-navigate-right{
+	padding-left: 30px;
+}*/
+
+.edit-css.mui-table-view-cell img.mui-media-object.mui-pull-left{
+	margin-left: 42px;
+}
+/*删除按钮*/
+.del-btn button.mui-btn.mui-btn-block {
+	background: linear-gradient(to right, #ff4510, #ff6900);
+	height: 45px;
+	border: none;
+	line-height: 45px;
+	padding: 0;
+}
+.mui-bar-tab{
+	height: 45px;
+	box-shadow: none;
+	display: none;
+}
+.mui-bar .mui-btn{
+	top: 0;
+}
+.mui-radio input[type=radio]:checked:before{
+	content:'\e442'
+}
+.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
+	color: #ff4e0c;
+}
+/*删除弹框*/
+.mui-popup-title{
+	font-size: 15px;
+	text-align: left;
+	color: #222;
+	font-weight: normal;
+}
+.mui-popup-title span{
+	font-size: 30px;
+    color: #b1b1b1;
+}
+.mui-popup-title+.mui-popup-text{
+	font-size: 13px;
+	color: #aaa;
+	text-align: left;
+}
+.mui-popup-inner:after{
+	height: 0;
+}
+.mui-popup-button:after{
+	width: 0;
+}
+.mui-popup-button.mui-popup-button-bold{
+	font-weight: normal;
+}
+.mui-popup-buttons{
+	background-color: #fff;
+	height: 55px;
+	padding: 0 15px;
+}
+.mui-popup-buttons .mui-popup-button{
+	font-size: 15px;
+	width: 125px;
+	height: 45px;
+	line-height: 45px;
+	color: #2e3133;
+	background-color: #e1e1e1;
+	border-radius: 5px;
+}
+.mui-popup-button:first-child{
+	background: linear-gradient(to right, #ff4510, #ff6900);
+	color: #fff;
+	margin-right: 10px;
+}
+.no-data{
+	width: 100%;
+	margin: auto;
+	height: 40px;
+	text-align: center;
+	padding-top: 65px;
+}
+.mui-control-content {
+	display: block;
+}

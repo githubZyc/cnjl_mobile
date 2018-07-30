@@ -1,0 +1,84 @@
+.mui-bar-nav~.mui-content {
+    padding-top: 65px;
+}
+.mui-bar-nav {
+	box-shadow: none;
+	background: #fff;
+}
+
+.mui-bar-nav h1 {
+	font-size: 18px;
+	color: #000;
+}
+
+.mui-bar-nav a {
+	color: #000;
+}
+.mui-content>.mui-table-view:first-child{
+	margin-top: 11px;
+}
+.mui-table-view .mui-table-view-cell a,.mui-table-view .mui-table-view-cell label,.mui-table-view .mui-table-view-cell input{
+	font-size: 15px;
+	color: #222;
+}
+::-webkit-input-placeholder{
+	color: #AAA;
+}
+.mui-table-view:before,.mui-table-view:after{
+	height: 0;
+}
+a,a:active{
+	color: #222;
+}
+p{
+	font-size: 13px;
+	color: #aaa;
+	padding: 0 15px;
+	line-height: 18px;
+	margin-top: 15px;
+}
+.my-position{
+	font-size:14px;
+}
+/*保存按钮*/
+.save-btn{
+	padding: 0 15px;
+}.save-btn button.mui-btn.mui-btn-block {
+	background: linear-gradient(to right, #ff4510, #ff6900);
+	height: 45px;
+	border-radius: 22px;
+	border: none;
+	line-height: 45px;
+	padding: 0;
+	margin-top: 30px;
+}
+
+.save-btn .link-area {
+	text-align: center;
+}
+
+.save-btn .link-area a:first-child {
+	font-size: 14px;
+	color: #FF4510;
+	margin-right: 55px;
+}
+
+.save-btn .link-area a:last-child {
+	font-size: 14px;
+	color: #aaa;
+}
+/*保存成功弹框*/
+.mui-popup-inner:after{
+	height: 0;
+}
+.mui-popup-button.mui-popup-button-bold{
+	font-weight: normal;
+	font-size: 18px;
+	color: #ff4510;
+}
+.mui-popup-title+.mui-popup-text {
+    color: #2e3133;
+}
+.mui-checkbox input[type=checkbox]:checked:before {
+    color: #ff6900;
+}

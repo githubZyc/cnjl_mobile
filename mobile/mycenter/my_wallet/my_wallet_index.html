@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-我的钱包主页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../../css/mobile/mycenter/my_wallet_index.css" />
+	</head>
+
+	<body style="background: #f2f2f2;">
+		<header id="header" class="mui-bar mui-bar-transparent">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的钱包</h1>
+		</header>
+		<div id="" class="mui-content">
+			<div class="my-wallet-logo">
+				<img src="../../../images/my_wallet_04.png" width="80px" />
+			</div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" v-tap="goBalance">
+						账户余额(元)
+					</a>
+					<p>3541.09</p>
+				</li>
+				<li class="mui-table-view-cell" v-tap="goRedpacket">
+					<a class="mui-navigate-right">
+						红包(元)
+					</a>
+					<p>3541.09</p>
+				</li>
+			</ul>
+			<button type="button" class="mui-btn mui-btn-block" v-tap="putBalance">余额提现</button>
+		</div>
+	</body>
+	<script src="../../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../../js/mobile/mycenter/my_wallet/my_wallet_index.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

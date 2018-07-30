@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-分类搜索页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/imgload.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/mobile/no_data.css" />
+		<link rel="stylesheet" href="../../css/mobile/search/search_list.css" />
+		
+	</head>
+
+	<body style="background: #f2f2f2;">
+		<header class="mui-bar mui-bar-nav">
+			<div class="mui-input-row mui-search mui-pull-right"  v-tap="showSearch">
+				<input type="search" readonly="readonly" placeholder="请输入商品名称或者商品编号">
+			</div>
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" v-tap="orderByThis('distance',$event)">
+				<span class="mui-tab-label">距离<i class="triangle-up"></i></span>
+			</a>
+			<a class="mui-tab-item" v-tap="orderByThis('createTime',$event)">
+				<span class="mui-tab-label">最新<i class="triangle-down"></i></span>
+			</a>
+			<a class="mui-tab-item" v-tap="orderByThis('unitPrice',$event)">
+				<span class="mui-tab-label">价格<i class="triangle-down"></i></span>
+			</a>
+		</nav>
+		<div class="mui-content mui-row mui-fullscreen mui-scroll-wrapper">
+			<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+				<a class="mui-control-item" href="#content1" data-code="" v-tap="searchByTypeCode('')">全部</a>
+				<a class="mui-control-item" href="#content1" data-code="01" v-tap="searchByTypeCode('01')">蔬菜</a>
+				<a class="mui-control-item" href="#content1" data-code="02" v-tap="searchByTypeCode('02')">水果</a>
+				<a class="mui-control-item" href="#content1" data-code="03" v-tap="searchByTypeCode('03')">蛋肉水产</a>
+				<a class="mui-control-item" href="#content1" data-code="04" v-tap="searchByTypeCode('04')">干货</a>
+				<a class="mui-control-item" href="#content1" data-code="05" v-tap="searchByTypeCode('05')">熟食</a>
+				<a class="mui-control-item" href="#content1" data-code="06" v-tap="searchByTypeCode('06')">活海鲜</a>
+				<a class="mui-control-item" href="#content1" data-code="07" v-tap="searchByTypeCode('07')">冰海鲜</a>
+				<a class="mui-control-item" href="#content1" data-code="08" v-tap="searchByTypeCode('08')">散装食品</a>
+				<a class="mui-control-item" href="#content1" data-code="09" v-tap="searchByTypeCode('09')">包装食品</a>
+				<a class="mui-control-item" href="#content1" data-code="10" v-tap="searchByTypeCode('10')">日用百货</a>
+				<a class="mui-control-item" href="#content1" data-code="11" v-tap="searchByTypeCode('11')">药膳</a>
+			</div>
+		</div>
+		<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mobile/search/search_list.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

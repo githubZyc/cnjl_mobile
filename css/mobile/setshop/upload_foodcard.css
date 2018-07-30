@@ -1,0 +1,70 @@
+.mui-bar-nav {
+	box-shadow: none;
+	background: #fff;
+}
+
+.mui-bar-nav h1 {
+	font-size: 18px;
+	color: #000;
+}
+
+.mui-bar-nav a {
+	color: #000;
+}
+
+.mui-bar-nav~.mui-content {
+	padding-bottom: 50px;
+	background: #fff;
+}
+
+.idcard {
+	margin: 40px auto 45px;
+	text-align: center;
+}
+
+.idcard p{
+	font-size: 16px;
+	color: #aaa;
+	margin-top: 25px;
+}
+.idcard-picture {
+	background: url(../../../images/idcard_icon_03.png) no-repeat;
+	width: 305px;
+	height: 220px;
+	background-size: 100% 100%;
+	margin: 0 auto;
+}
+
+.idcard-picture img{
+	margin: 20px auto 0;
+	
+}
+/*保存按钮*/
+
+.save-btn button.mui-btn.mui-btn-block {
+	background: linear-gradient(to right, #ff4510, #ff6900);
+	height: 45px;
+	border: none;
+	line-height: 45px;
+	padding: 0;
+}
+
+.mui-bar-tab {
+	height: 45px;
+	box-shadow: none;
+}
+
+.mui-bar .mui-btn {
+	top: 0;
+}
+
+.mui-checkbox input[type=checkbox]:checked:before {
+	content: '\e442';
+	color: #ff4e0c;
+}
+
+.mui-input-group:before,
+.mui-input-group .mui-input-row:after,
+.mui-input-group:after {
+	height: 0;
+}

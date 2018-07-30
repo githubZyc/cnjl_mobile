@@ -1,0 +1,608 @@
+{
+    "@platforms": ["android", "iPhone", "iPad"],
+    "id": "H5FA049A0",/*应用的标识，创建应用时自动生成，勿手动修改*/
+    "name": "吉犁",/*应用名称，程序桌面图标名称*/
+    "version": {
+        "name": "1.0.0",/*应用版本名称*/
+        "code": ""
+    },
+    "description": "吉犁APP",/*应用描述信息*/
+    "icons": {
+        "72": "icon.png"
+    },
+    "launch_path": "mobile/main.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "developer": {
+        "name": "",/*开发者名称*/
+        "email": "",/*开发者邮箱地址*/
+        "url": ""/*开发者个人主页地址*/
+    },
+    "permissions": {
+        "Accelerometer": {
+            "description": "访问加速度感应器"
+        },
+        "Audio": {
+            "description": "访问麦克风"
+        },
+        
+        "Cache": {
+            "description": "管理应用缓存"
+        },
+        "Camera": {
+            "description": "访问摄像头"
+        },
+        "Console": {
+            "description": "跟踪调试输出日志"
+        },
+        
+        "Device": {
+            "description": "访问设备信息"
+        },
+        "Downloader": {
+            "description": "文件下载管理"
+        },
+        "Events": {
+            "description": "应用扩展事件"
+        },
+        "File": {
+            "description": "访问本地文件系统"
+        },
+        "Gallery": {
+            "description": "访问系统相册"
+        },
+        "Geolocation": {
+            "description": "访问位置信息"
+        },
+        "Invocation": {
+            "description": "使用Native.js能力"
+        },
+        "Orientation": {
+            "description": "访问方向感应器"
+        },
+        "Proximity": {
+            "description": "访问距离感应器"
+        },
+        "Storage": {
+            "description": "管理应用本地数据"
+        },
+        
+        "Uploader": {
+            "description": "管理文件上传任务"
+        },
+        "Runtime": {
+            "description": "访问运行期环境"
+        },
+        "XMLHttpRequest": {
+            "description": "跨域网络访问"
+        },
+        "Zip": {
+            "description": "文件压缩与解压缩"
+        },
+        "Barcode": {
+            "description": "管理二维码扫描插件"
+        },
+        "Maps": {},
+        
+        "Webview":{
+        	"description": "窗口管理"
+        },
+        "NativeUI":{
+        	"description": "原生UI控件"
+        },
+        "Navigator":{
+        	"description": "浏览器信息"
+        },
+        "NativeObj":{
+        	"description": "原生对象"
+        },"OAuth":{},"Share":{},"Contacts":{},"Messaging":{}
+    },
+    "plus": {
+    	 "statusbar": {
+	        "immersed": true,
+	        "style":"dark"
+	    },
+        "splashscreen": {
+            "autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+            "waiting": true,"delay":"2000"/*是否在程序启动界面显示等待雪花，true表示显示，false表示不显示。*/
+        },
+        "popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+        "runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+        "signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+        "distribute": {"plugins":{"share":{"qq":{"appid":"101471203","description":"QQ分享"},"weixin":{"appid":"wx6135145bff424e36","appsecret":"d3b5ee3306653103fe667bd63c4853d4","description":"可选，微信分享"}},"oauth":{"qq":{"appid":"101471203"},"weixin":{"appid":"wx6135145bff424e36","appsecret":"d3b5ee3306653103fe667bd63c4853d4"}},"maps":{"amap":{"appkey_ios":"87c21b1c889073dc85118094767eafa2","appkey_android":"87c21b1c889073dc85118094767eafa2","description":""}}},
+            "apple": {
+                "appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+                "mobileprovision": "",/*iOS应用打包配置文件*/
+                "password": "",/*iOS应用打包个人证书导入密码*/
+                "p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+                "devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+                "frameworks":[
+                ]/*调用Native.js调用原生Objective-c API需要引用的FrameWork，如需调用GameCenter，则添加"GameKit.framework"*/
+            },
+            "google": {
+                "packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+                "keystore": "",/*Android应用打包使用的密钥库文件*/
+                "password": "",/*Android应用打包使用密钥库中证书的密码*/
+                "aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+               "permissions": ["<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"android.permission.SEND_SMS\"/>","<uses-permission android:name=\"android.permission.INTERNET\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>","<uses-permission android:name=\"android.permission.WRITE_SMS\"/>","<uses-permission android:name=\"android.permission.READ_SMS\"/>"]
+				/*使用Native.js调用原生安卓API需要使用到的系统权限*/
+            },
+            "orientation": [
+                "portrait-primary"
+            ],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+            "icons": {
+                "ios": {
+                    "prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+                    "auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+                    "iphone": {
+                        "normal": "", /*iPhone3/3GS程序图标，分辨率：57x57*/
+                        "retina": "", /*iPhone4程序图标，分辨率：114x114*/
+                        "retina7": "", /*iPhone4S/5/6程序图标，分辨率：120x120*/
+			"retina8": "", /*iPhone6 Plus程序图标，分辨率：180x180*/
+                        "spotlight-normal": "", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+                        "spotlight-retina": "", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+                        "spotlight-retina7": "", /*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+                        "settings-normal": "", /*iPhone4设置页面程序图标，分辨率：29x29*/
+                        "settings-retina": "", /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+			"settings-retina8": "" /*iPhone6Plus设置页面程序图标，分辨率：87x87*/
+                    },
+                    "ipad": {
+                        "normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
+                        "retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
+                        "normal7": "", /*iPad iOS7程序图标，分辨率：76x76*/
+                        "retina7": "", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+                        "spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+                        "spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+                        "spotlight-normal7": "",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+                        "spotlight-retina7": "",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+                        "settings-normal": "",/*iPad设置页面程序图标，分辨率：29x29*/
+                        "settings-retina": "" /*iPad高分屏设置页面程序图标，分辨率：58x58*/
+                    }
+                },
+                "android": {
+                    "mdpi": "E:/20180623/20170515/CNJL_PROJECT/other_detail/app_detail/icon_48x48.png", /*普通屏程序图标，分辨率：48x48*/
+                    "ldpi": "E:/20180623/20170515/CNJL_PROJECT/other_detail/app_detail/icon_48x48.png", /*大屏程序图标，分辨率：48x48*/
+                    "hdpi": "E:/20180623/20170515/CNJL_PROJECT/other_detail/app_detail/icon_72x72.png", /*高分屏程序图标，分辨率：72x72*/
+                    "xhdpi": "E:/20180623/20170515/CNJL_PROJECT/other_detail/app_detail/icon_96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+                    "xxhdpi": "E:/20180623/20170515/CNJL_PROJECT/other_detail/app_detail/icon_144x144.png","xxxhdpi":"E:/20180623/20170515/CNJL_PROJECT/other_detail/app_detail/icon_192x192.png"/*1080P 高分屏程序图标，分辨率：144x144*/
+                }
+            },
+            "splashscreen": {
+                "ios": {
+                    "iphone": {
+                        "default": "", /*iPhone3启动图片选，分辨率：320x480*/
+                        "retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+                        "retina40": "",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+                        "retina47": "",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+                        "retina55": "",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+                        "retina55l": ""/*5.5 英寸设备(iPhone6 Plus)横屏启动图片，分辨率：2208x1242*/
+                    },
+                    "ipad": {
+                        "portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+                        "portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+                        "landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+                        "landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+                        "portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+                        "portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+                        "landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+                        "landscape-retina7": ""/*iPad iOS7高分屏横屏启动图片，分辨率：2048x1536*/
+                    }
+                },
+                "android": {
+                    "mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+                    "ldpi": "", /*大屏启动图片，分辨率：320x442*/
+                    "hdpi": "E:/20180623/20170515/CNJL_PROJECT/other_detail/app_detail/start_image/20180703_启动页_480x762.png", /*高分屏启动图片，分辨率：480x762*/
+                    "xhdpi": "E:/20180623/20170515/CNJL_PROJECT/other_detail/app_detail/start_image/20180703_启动页_720x1242.png", /*720P高分屏启动图片，分辨率：720x1242*/
+                    "xxhdpi": "E:/20180623/20170515/CNJL_PROJECT/other_detail/app_detail/start_image/20180703_启动页_1080x1882.png"/*1080P高分屏启动图片，分辨率：1080x1882*/
+                }
+            },"debug":true
+        },"ads":{"rp":false,"splash":false,"push":false},"adid":"126099290305"
+    },"fullscreen":false,
+	"dependencies": {
+		"pages": {
+			"mobile/main.html": {
+				"resources": [
+					"mobile/index.html",
+					"mobile/set_shop.html",
+					"mobile/my_center.html"
+				],
+				"refer": [
+					"mobile/shop_car.html",
+					"mobile/login.html"
+				],
+				"priority": 0
+			},
+			"mobile/set_shop.html": {
+				"resources": [
+					"mobile/set_shop_subpage.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"mobile/index.html": {
+				"resources": [
+					"mobile/index_subpage.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"mobile/my_center.html": {
+				"resources": [
+					"mobile/my_center_subpage.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"mobile/shop_car.html": {
+				"resources": [
+					"mobile/shop_car_subpage.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"mobile/login.html": {
+				"resources": [],
+				"refer": [
+					"mobile/register.html",
+					"mobile/find_passward.html"
+				],
+				"priority": 0
+			},
+			"mobile/set_shop_subpage.html": {
+				"resources": [],
+				"refer": [
+					"mobile/setshop/add_shop.html",
+					"mobile/setshop/shop_index.html"
+				],
+				"priority": 0
+			},
+			"mobile/setshop/shop_index.html": {
+				"resources": [],
+				"refer": [
+					"mobile/setshop/storehouse_add_goodsclassify.html",
+					"mobile/setshop/custom_add_product_choose.html",
+					"mobile/setshop/custom_add_product.html",
+					"mobile/setshop/goods_management.html",
+					"mobile/setshop/shop_setting.html"
+				],
+				"priority": 0
+			},
+			"mobile/setshop/storehouse_add_goodsclassify.html": {
+				"resources": [
+					"mobile/setshop/storehouse_add_goodsclassify_subpage.html"
+				],
+				"refer": [
+					"mobile/setshop/storehouse_add_goodslist.html",
+					"mobile/setshop/shop_index.html",
+					"mobile/setshop/goods_management_goodsedit.html"
+				],
+				"priority": 0
+			},
+			"mobile/setshop/custom_add_product_choose.html": {
+				"resources": [],
+				"refer": [
+					"mobile/setshop/shop_index.html"
+				],
+				"priority": 0
+			},
+			"mobile/setshop/custom_add_product.html": {
+				"resources": [],
+				"refer": [
+					"mobile/setshop/custom_add_product_choose.html"
+				],
+				"priority": 0
+			},
+			"mobile/my_center_subpage.html": {
+				"resources": [],
+				"refer": [
+					"mobile/mycenter/personal_message.html",
+					"mobile/mycenter/about_us.html",
+					"mobile/mycenter/setting.html",
+					"mobile/mycenter/address_manage.html",
+					"mobile/mycenter/my_wallet/my_wallet_index.html",
+					"mobile/mycenter/my_customer.html"
+				],
+				"priority": 0
+			},
+			"mobile/mycenter/personal_message.html": {
+				"resources": [],
+				"refer": [
+					"mobile/mycenter/username_edit.html",
+					"mobile/mycenter/tel_edit.html",
+					"mobile/cropper.html"
+				],
+				"priority": 0
+			},
+			"mobile/setshop/goods_management.html": {
+				"resources": [
+					"mobile/setshop/goods_management_subpage.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"mobile/mycenter/setting.html": {
+				"resources": [],
+				"refer": [
+					"mobile/mycenter/message_setting.html",
+					"mobile/mycenter/privacy_statement.html",
+					"mobile/mycenter/service_term.html"
+				],
+				"priority": 0
+			},
+			"mobile/mycenter/address_manage.html": {
+				"resources": [],
+				"refer": [
+					"mobile/mycenter/add_address.html"
+				],
+				"priority": 0
+			},
+			"mobile/index_subpage.html": {
+				"resources": [],
+				"refer": [
+					"mobile/setshop/goods_details.html",
+					"mobile/search/search_common.html",
+					"mobile/search/search_list.html",
+					"mobile/http_web_view.html",
+					"mobile/goods_details/goods_details_main.html"
+				],
+				"priority": 0
+			},
+			"mobile/search/search_common.html": {
+				"resources": [],
+				"refer": [
+					"mobile/search/search.html"
+				],
+				"priority": 0
+			},
+			"mobile/search/search_list.html": {
+				"resources": [
+					"mobile/search/search_list_subpage.html"
+				],
+				"refer": [
+					"mobile/setshop/goods_details.html",
+					"mobile/search/search_common.html"
+				],
+				"priority": 0
+			},
+			"mobile/search/search.html": {
+				"resources": [],
+				"refer": [
+					"mobile/setshop/goods_details.html"
+				],
+				"priority": 0
+			},
+			"mobile/setshop/add_shop.html": {
+				"resources": [],
+				"refer": [
+					"mobile/setshop/shop_index.html"
+				],
+				"priority": 0
+			},
+			"mobile/setshop/goods_management_subpage.html": {
+				"resources": [],
+				"refer": [
+					"mobile/setshop/custom_add_product.html",
+					"mobile/setshop/my_shop_commodity_edit.html"
+				],
+				"priority": 0
+			},
+			"mobile/setshop/my_shop_commodity_edit.html": {
+				"resources": [],
+				"refer": [
+					"mobile/setshop/custom_add_product_choose.html"
+				],
+				"priority": 0
+			},
+			"mobile/setshop/shop_setting.html": {
+				"resources": [],
+				"refer": [
+					"mobile/mycenter/tel_edit.html",
+					"mobile/setshop/upload_idcard.html",
+					"mobile/setshop/upload_business_license.html",
+					"mobile/setshop/upload_foodcard.html",
+					"mobile/setshop/business_position.html",
+					"mobile/setshop/manage_person_list.html",
+					"mobile/mycenter/service_term.html"
+				],
+				"priority": 0
+			},
+			"mobile/setshop/business_position.html": {
+				"resources": [
+					"mobile/setshop/business_position_subpage.html"
+				],
+				"refer": [
+					"mobile/search/search.html"
+				],
+				"priority": 0
+			},
+			"mobile/setshop/manage_person_list.html": {
+				"resources": [],
+				"refer": [
+					"mobile/setshop/add_manage_person.html"
+				],
+				"priority": 0
+			},
+			"mobile/register.html": {
+				"resources": [],
+				"refer": [
+					"mobile/mycenter/service_term.html"
+				],
+				"priority": 0
+			},
+			"mobile/setshop/goods_details.html": {
+				"resources": [
+					"mobile/setshop/goods_details_subpage.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"mobile/search/search_list_subpage.html": {
+				"resources": [],
+				"refer": [
+					"mobile/setshop/goods_details.html",
+					"mobile/goods_details/goods_details_main.html"
+				],
+				"priority": 0
+			},
+			"mobile/setshop/storehouse_add_goodsclassify_subpage.html": {
+				"resources": [],
+				"refer": [
+					"mobile/setshop/goods_management_goodsedit.html"
+				],
+				"priority": 0
+			},
+			"mobile/goods_details/goods_details_main.html": {
+				"resources": [
+					"mobile/goods_details/tab-top-subpage-1.html"
+				],
+				"refer": [
+					"mobile/goods_details/tab-top-subpage-4.html",
+					"mobile/goods_details/tab-top-subpage-3.html"
+				],
+				"priority": 0
+			},
+			"mobile/goods_details/tab-top-subpage-3.html": {
+				"resources": [],
+				"refer": [
+					"mobile/cookbook/cookbook_details.html"
+				],
+				"priority": 0
+			},
+			"mobile/mycenter/my_wallet/my_wallet_index.html": {
+				"resources": [],
+				"refer": [
+					"mobile/mycenter/my_wallet/balance_put.html",
+					"mobile/mycenter/my_wallet/red_packet_record.html",
+					"mobile/mycenter/my_wallet/balance_record.html"
+				],
+				"priority": 0
+			},
+			"mobile/mycenter/my_wallet/red_packet_record.html": {
+				"resources": [
+					"mobile/mycenter/my_wallet/red_packet_record_subpage.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"mobile/mycenter/my_wallet/balance_record.html": {
+				"resources": [
+					"mobile/mycenter/my_wallet/balance_record_subpage.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"mobile/mycenter/my_customer.html": {
+				"resources": [
+					"mobile/mycenter/my_customer_subpage.html"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"images/index_img_21.png",
+				"js/jquery.glide.js",
+				"js/mobile/index.js",
+				"js/jquery-1.7.2.js",
+				"images/tab_08.png",
+				"js/pmu.js",
+				"images/line_05.png",
+				"js/mobile/find_passward.js",
+				"js/mobile/shop_car_subpage.js",
+				"css/mobile/setshop/custom_add_product_choose.css",
+				"images/tab_10.png",
+				"images/index_img_09.png",
+				"js/mui.poppicker.js",
+				"images/index_img_13.png",
+				"js/mui.previewimage.js",
+				"js/mui.js",
+				"js/city.data.js",
+				"css/mobile/register.css",
+				"images/line_03.png",
+				"css/mobile/setshop/shop_index.css",
+				"images/index_img_48.png",
+				"images/index_img_05.png",
+				"images/shop_index_icon_01.png",
+				"js/mobile/my_center_subpage.js",
+				"fonts/mui.ttf",
+				"js/mui.lazyload.js",
+				"images/good_list_icon_03.png",
+				"index.html",
+				"css/imgload.css",
+				"images/add_product_photo_03.png",
+				"js/Vue/vue.min.js",
+				"js/extends.js",
+				"js/addons.js",
+				"js/checkout.js",
+				"js/mobile/set_shop.js",
+				"css/mobile/setshop/custom_add_product.css",
+				"js/md5.js",
+				"images/index_img_46.png",
+				"images/login_icon_08.png",
+				"js/mui.min.js",
+				"images/login_icon_03.png",
+				"js/Vue/vue-tap-click.js",
+				"js/mobile/set_shop_subpage.js",
+				"images/login_bg.png",
+				"js/mobile/setshop/add_shop.js",
+				"css/mobile/setshop/goods_management_goodsedit.css",
+				"images/login_icon_07.png",
+				"images/index_img_31.png",
+				"images/index_img_11.png",
+				"images/shop_index_icon_04.png",
+				"images/set_shop_icon_03.png",
+				"images/shop_index_icon_08.png",
+				"js/mobile/shop_car.js",
+				"css/mui.min.css",
+				"images/index_img_55.png",
+				"css/mobile/index.css",
+				"js/mobile/setshop/custom_add_product_choose.js",
+				"images/index_img_02.png",
+				"js/mobile/login.js",
+				"images/tab_03.png",
+				"css/mobile/login.css",
+				"js/mui.zoom.js",
+				"css/mobile/setshop/storehouse_add_goodsclassify.css",
+				"js/mobile/setshop/custom_add_product.js",
+				"images/index_img_39.png",
+				"js/age.data.js",
+				"images/banner_01.png",
+				"images/index_meg_icon_03.png",
+				"images/shop_index_icon_16.png",
+				"images/index_img_34.png",
+				"js/mui.picker.js",
+				"js/mobile/register.js",
+				"images/shop_index_icon_19.png",
+				"css/mobile/setshop/stroehouse_add_goodslist.css",
+				"css/mui.css",
+				"js/immersed.js",
+				"js/zepto.min.js",
+				"images/good_list_icon_10.png",
+				"js/Vue/vue-animated-list.js",
+				"js/muiHelper.js",
+				"images/shop_index_icon_12.png",
+				"css/mobile/find_passward.css",
+				"images/index_img_20.png",
+				"js/mui.lazyload.img.js",
+				"js/utils.js",
+				"css/mui.poppicker.css",
+				"js/mobile/setshop/shop_index.js",
+				"images/index_img_42.png",
+				"images/index_triangle_03.png",
+				"js/imgload.js",
+				"images/index_img_24.png",
+				"css/mobile/set_shop_subpage.css",
+				"images/index_img_52.png",
+				"js/mobile/main.js",
+				"css/mui.picker.css",
+				"js/mobile/index_subpage.js",
+				"images/good_list_icon_06.png",
+				"images/tab_05.png",
+				"images/index_img_07.png",
+				"css/mobile/setshop/add_shop.css",
+				"images/index_img_22.png",
+				"js/mobile/setshop/goods_management_goodsedit.js",
+				"images/index_img_23.png"
+			]
+		}
+	}
+}

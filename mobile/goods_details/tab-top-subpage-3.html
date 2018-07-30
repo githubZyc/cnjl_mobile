@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-相关菜谱列表页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/imgload.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/mobile/no_data.css"/>
+		<link rel="stylesheet" href="../../css/mobile/goods_details/tab-top-subpage-3.css" />
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="no-data" v-show="cookMenus.length<=0">
+				<img src="../../images/tab_10.png"/>
+				<p>暂无数据</p>
+			</div>
+			<template v-if="cookMenus.length>0">
+			    <ul class="mui-table-view" id="ul-list">
+			        <li class="mui-table-view-cell mui-media" v-for="cookMenu in cookMenus" v-tap="goCookMenDetail(cookMenu)">
+			            <a href="javascript:;">
+			                <img class="mui-media-object mui-pull-left anim_opacity" src="../../images/commodity-sample/no.png" :data-src="cookMenu.cookMenuPic">
+			                <div class="mui-media-body">
+			                    {{cookMenu.cookBookName}}
+			                    <p class="mui-ellipsis-2">{{cookMenu.cookLabel}}</p>
+			                    <p class="mui-ellipsis">作者：{{cookMenu.cutomberName}}</p>
+			                </div>
+			            </a>
+			        </li>
+			    </ul>
+		    </template>
+		</div>
+	</body>
+	<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/lazy-load-img.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mobile/goods_details/tab-top-subpage-3.js" type="text/javascript" charset="utf-8"></script>
+</html>

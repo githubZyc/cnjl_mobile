@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>菜鸟网络-吉犁APPV1.0-搜索页面</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../css/mobile/no_data.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/mobile/search/search.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<div class="mui-input-row mui-search mui-pull-left">
+				<input id="thisSearch" type="search" class="mui-input-clear" placeholder="请输入商品名称或者商品编号">
+			</div>
+			<button class="mui-pull-right" v-tap="thisSearch()">搜索</button>
+		</header>
+		<div class="mui-content">
+			<div class="no-data" v-if="!resultCommoditys">
+				<img src="../../images/tab_10.png"/>
+				<p>暂无商品</p>
+			</div>
+			<template v-if="resultCommoditys.length>0">
+				 <ul class="mui-table-view" v-for="commodity in resultCommoditys">
+		            <li class="mui-table-view-cell" v-text="commodity.commodityName" v-tap="goCommodityDetal(commodity)"></li>
+		        </ul>
+			</template>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mobile/search/search.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

@@ -1,0 +1,125 @@
+html,
+header {
+	background: #fff;
+}
+
+header a {
+	color: #000;
+}
+
+header h1 {
+	color: #000;
+	font-size: 18px;
+}
+
+.mui-bar-nav.mui-bar {
+	box-shadow: none;
+	background: #fff;
+}
+.mui-bar-nav~.mui-content {
+    padding-top: 56px;
+}
+.mui-content-padded {
+	margin: 10px 0 0 0;
+}
+.manage-name-inp.mui-input-row{
+	background-color: #fff;
+	margin: 11px 0;
+	padding: 0 15px;
+}
+input[type="text"]#manage-name{
+	border: none;
+	margin: 0 ;
+	padding: 0;
+	height: 50px;
+	line-height: 50px;
+}
+#tel-form input {
+	padding: 0;
+}
+
+.mui-input-group:before,
+.mui-input-group:after {
+	height: 0;
+}
+
+ .mui-input-group .mui-input-row {
+	height: 55px;
+	line-height: 55px;
+}
+
+.mui-input-group .mui-input-row:after {
+	left: 0;
+	background-color: #e1e1e1;
+}
+
+.mui-input-group,
+.sure-btn {
+	padding: 0 15px;
+}
+
+.mui-input-group .mui-input-row input[type="text"] {
+	width: 65%;
+}
+
+.mui-input-group .mui-input-row button:before {
+	position: absolute;
+	right: 100px;
+	bottom: 5px;
+	top: 5px;
+	width: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #e1e1e1;
+}
+
+.mui-input-group .mui-input-row button {
+	width: 29%;
+	padding: 0px;
+	font-size: 15px;
+	color: #ff4510;
+	float: right;
+	line-height: 55px;
+	text-align: center;
+	border: none;
+	background: #fff;
+}
+
+.sure-btn button.mui-btn.mui-btn-block {
+	background: linear-gradient(to right, #ff4510, #ff6900);
+	height: 45px;
+	border-radius: 22px;
+	border: none;
+	line-height: 45px;
+	padding: 0;
+	margin-top: 30px;
+}
+
+.code-inp.mui-input-row .mui-input-clear~.mui-icon-clear {
+	right: 100px;
+	top: 17px;
+}
+.code-inp input{
+	width: 55%;
+}
+::-webkit-input-placeholder {
+	font-size: 15px;
+	color: #ccc;
+}
+
+.mui-input-row .mui-input-clear~.mui-icon-clear {
+	top: 18px;
+}
+/*发送验证码弹窗*/
+.mui-popup-inner:after{
+	height: 0;
+}
+.mui-popup-button.mui-popup-button-bold{
+	font-weight: normal;
+	font-size: 18px;
+	color: #ff4510;
+}
+.mui-popup-title+.mui-popup-text {
+    color: #2e3133;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-开店子页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/mobile/setshop/shop_index.css" />
+	</head>
+
+	<body style="background: #f2f2f2;">
+		<header id="header" class="mui-bar mui-bar-transparent">
+			<h1 class="mui-title" v-tap="changeShop" v-text="shopName"><img class="mui-left" src="../../images/index_triangle_03.png" width="10px" /></h1>
+		</header>
+		<div id="" class="mui-content">
+			<div id="business-num" class="today-business-num">
+				<div class="today-business-num-cont">
+					<img src="../../images/line_03.png" width="89px" height="1px" />
+					<span class="">
+							今日营业额(元)
+						</span>
+					<img src="../../images/line_05.png" width="89px" height="1px" />
+				</div>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							0.00
+						</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="#add-shop" class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="../../images/shop_index_icon_04.png" width="24px">
+						<div class="mui-media-body">
+							添加商品
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media" v-tap="goGoodsManagement">
+					<a class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="../../images/shop_index_icon_08.png" width="22px">
+						<div class="mui-media-body">
+							商品管理
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media" v-tap="goGoodsManagement">
+					<a class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="../../images/shop_index_13.png" width="21px">
+						<div class="mui-media-body">
+							拼团管理
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media" v-tap="goGoodsManagement">
+					<a class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="../../images/shop_index_27.png" width="25px">
+						<div class="mui-media-body">
+							合并订单
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media" v-tap="goGoodsManagement">
+					<a class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="../../images/shop_index_10.png" width="24px">
+						<div class="mui-media-body">
+							派送管理
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media" v-tap="goOrderManagement">
+					<a class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="../../images/shop_index_icon_12.png" width="20px">
+						<div class="mui-media-body">
+							订单管理
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="../../images/shop_index_icon_16.png" width="23px">
+						<div class="mui-media-body">
+							销售数据
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media" v-tap="goShopSetting">
+					<a class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="../../images/shop_index_icon_19.png" width="23px">
+						<div class="mui-media-body">
+							店铺设置
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="topPopover" class="mui-popover" style="">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<div class="no-data" v-show="shops.length==0">
+						<img src="../../images/tab_10.png"/>
+						<p>暂无数据</p>
+					</div>
+					<ul class="mui-table-view" v-show="!shops.length==0">
+							<li class="mui-table-view-cell" v-for=" shop in shops" v-tap="goShopIndex(shop.shopName,shop.shopId)">
+								<a class="mui-navigate-right" v-text="shop.shopName"></a>
+							</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<div id="add-shop" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="javascript:void(0);" v-tap="goStoreHouse">从样品库中添加</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="javascript:void(0);" v-tap="goCustomHouse">自定义添加</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#add-shop"><b>取消</b></a>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mobile/setshop/shop_index.js"type="text/javascript" charset="utf-8"></script>
+
+</html>

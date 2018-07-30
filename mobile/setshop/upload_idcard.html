@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-上传法人代表身份证页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/mui.picker.css" />
+		<link rel="stylesheet" href="../../css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../../css/mobile/setshop/upload_idcard.css" />
+	</head>
+
+	<body style="background: #f2f2f2;">
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">法人代表身份证</h1>
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		</header>
+		<div class="mui-content">
+			<div class="idcard">
+				<div class="idcard-picture" id="idcard-front" v-tap="idcardFront">
+					<img :src="idCardFrontBase64" onerror="src='../../images/idcard_icon_01.png'" width="180px" height="110px"/>
+				</div>
+				<p>上传横版身份证正面</p>
+			</div>
+			<div class="idcard">
+				<div class="idcard-picture" id="idcard-back" v-tap="idcardBack">
+					<img :src="idCardBackBase64" onerror="src='../../images/idcard_icon_06.png'"width="180px" height="110px"/>
+				</div>
+				<p>上传横版身份证背面</p>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<div class="save-btn">
+				<button class="mui-btn mui-btn-block mui-btn-primary" v-tap="uploadIdCard">确定</button>
+			</div>
+		</nav>
+		<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mobile/setshop/upload_idcard.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

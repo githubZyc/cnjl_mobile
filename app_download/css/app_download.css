@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei";
+}
+
+.content-wrap {
+	/*width: 100%;*/
+	/*padding-top: 1px;*/
+	background: url(../images/bg_image.png) no-repeat center;
+	background-size: cover;
+}
+.cont-title{padding: 15px 0;}
+.cont-title .tel p:first-child{font-size: 14px;}
+.cont-title .tel p:first-child span{font-size: 16px;}
+
+.logo img{width: 100px;}
+.logo span{display: inline-block;font-size: 14px;letter-spacing: 5px;margin-left: 15px;color: #fff;}
+p{
+	color: #fff;
+}
+/*.cont-title .col-md-6:first-child{
+	line-height: 68px;
+}
+.cont-title .col-md-6:first-child span{
+	color: #fff;
+	margin-left: 5px;	
+}*/
+.cont-title div p{
+	margin: 0;
+	text-align: right;
+}
+/*.introuce .col-md-4{
+	margin-top: 7rem;
+}*/
+.phone-img{height: calc(100vh - 157px);}
+.phone-img img{max-height: 100%;}
+
+.introuce{padding-top: 88px;}
+.code{display: inline-block;text-align: center;margin-top: 50px;}
+.code p{margin-bottom: 0;margin-top: 1rem;}
+.text-right{padding-top: 5%;font-size: 16px;}
+.container{max-height: 100%;}
+
+
+@media (max-width:991px ) {
+	.phone-img{display: none;}
+	.text-right{text-align: center;}
+}
+
+@media (max-width:465px ) {
+	.cont-title .logo,.cont-title .tel{float: none !important;}
+	.cont-title div p,.cont-title{text-align: center;}
+	.introuce{padding-top: 0;}
+	.code{margin-top: 20px;}
+	.text-right{font-size: 14px;}
+}

@@ -1,0 +1,77 @@
+header {
+	background: #fff;
+}
+
+header a {
+	color: #000;
+}
+
+header h1 {
+	color: #000;
+	font-size: 18px;
+}
+
+.mui-bar-nav.mui-bar {
+	box-shadow: none;
+	background: #fff;
+}
+.mui-bar .mui-btn-link{
+	font-size: 15px;
+	color: #000;
+}.mui-bar .mui-btn-link:active{
+	color: #000;
+}
+.mui-btn-blue:enabled:active{
+	border: none;
+}
+/*列表*/
+.mui-table-view-cell{
+	height: 50px;
+	line-height: 50px;
+	padding: 0 15px;
+}
+.mui-table-view-cell a.mui-navigate-right{
+	color: #222;
+	font-size: 16px;
+}
+.mui-table-view-cell a.mui-navigate-right span{
+	color: #aaa;
+	margin-right: 25px;
+}
+.mui-table-view-cell:after{
+	background-color: #E1E1E1;
+}
+
+.mui-table-view:after{
+	height: 0;
+}
+/*添加按钮*/
+.add-btn button.mui-btn.mui-btn-block {
+	background: linear-gradient(to right, #ff4510, #ff6900);
+	height: 45px;
+	border-radius: 22px;
+	border: none;
+	line-height: 45px;
+	padding: 0;
+	margin-top: 30px;
+}
+
+.add-btn {
+	padding: 0 15px;
+}
+.mui-checkbox input[type=checkbox]{
+	display: none;
+}
+/*点击编辑之后的样式*/
+/*checkbox*/
+.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
+	color: #FF4510;
+}
+.edit-css .mui-checkbox input[type=checkbox]{
+	top: 10px;
+    left: 0px;
+    display: inline-block;
+}
+.edit-css.mui-table-view-cell a.mui-navigate-right{
+	padding-left: 30px;
+}

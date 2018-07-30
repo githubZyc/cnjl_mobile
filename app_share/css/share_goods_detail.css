@@ -1,0 +1,220 @@
+.mui-bar.mui-bar-nav {
+	box-shadow: none;
+	background: #fff;
+	padding: 0 15px;
+}
+
+.mui-bar-nav h1 {
+	font-size: 18px;
+	color: #000;
+}
+
+.mui-bar-nav a {
+	color: #000;
+}
+
+.mui-bar-nav a:nth-child(2) {
+	margin-top: 10px;
+}
+
+.mui-bar-nav~.mui-content {
+	padding-top: 44px;
+	padding-bottom: 50px;
+}
+
+
+/*商品主图*/
+
+.add-product-photo {
+	background: #fff;
+	width: 100%;
+	padding: 1px 15px;
+}
+
+.add-product-photo div {
+	/*text-align: center;*/
+}
+
+.add-product-photo div div {
+	width: 100%;
+	margin: 30px auto 0px;
+	text-align: center;
+}
+.add-product-photo div div img {
+	max-width: 100%;
+    max-height: 210px;
+	margin-top: 10px;
+}
+
+.add-product-photo div h5 {
+	font-size: 15px;
+	color: #222;
+	text-align: left;
+	margin-bottom: 12px;
+	margin-top: 12px;
+}
+
+.add-product-photo div p {
+	text-align: left;
+	font-size: 17px;
+	color: #ff4510;
+}
+
+.add-product-photo .mui-table-view {
+	padding: 0;
+}
+
+.add-product-photo .mui-table-view:before {
+	height: 1px;
+	background-color: #E1E1E1;
+}
+
+.add-product-photo .mui-table-view-cell {
+	font-size: 15px;
+	color: #aaa;
+	text-align: left;
+}
+
+.add-product-photo .mui-table-view-cell span {
+	font-size: 15px;
+	color: #222;
+}
+
+
+/*商品详细信息*/
+
+.address-distance ::-webkit-input-placeholder {
+	color: #ff4510;
+}
+
+.mui-table-view {
+	margin-top: 11px;
+	padding-left: 15px;
+}
+
+.mui-table-view .mui-table-view-cell {
+	height: 50px;
+	line-height: 50px;
+	padding: 0;
+	margin: 0;
+}
+
+.mui-table-view .mui-table-view-cell .mui-input-row label {
+	font-size: 16px;
+	color: #2e3133;
+	padding: 0;
+	height: 50px;
+	line-height: 50px;
+}
+
+.mui-table-view .mui-table-view-cell .mui-input-row input {
+	font-size: 16px;
+	color: #aaa;
+	margin-right: 15px;
+	text-align: right;
+	padding: 0;
+	height: 50px;
+	line-height: 50px;
+	width: 60%;
+}
+
+::-webkit-input-placeholder {
+	font-size: 16px;
+	color: #aaa;
+}
+
+.mui-table-view .mui-table-view-cell .mui-navigate-right .mui-input-row input {
+	margin-right: 40px;
+	width: 50%;
+}
+
+.mui-table-view-cell:after {
+	left: 0;
+	background: #E1E1E1;
+}
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	margin: 0;
+	padding: 0;
+}
+
+.mui-table-view-cell>a:not(.mui-btn).mui-active,
+.mui-table-view-cell.mui-active {
+	background: transparent;
+}
+
+.mui-table-view:before,
+.mui-table-view:after {
+	height: 0;
+}
+
+
+/*数量输入框*/
+
+.mui-input-row .mui-numbox {
+	margin: 6px 8px;
+}
+
+.mui-table-view .mui-table-view-cell .mui-input-row input.mui-input-numbox {
+	text-align: center;
+	line-height: 33px;
+	height: 33px;
+	font-size: 13px;
+	color: #000;
+}
+
+
+/*底部按钮*/
+
+.mui-bar-tab.mui-bar {
+	box-shadow: none;
+	border-top: 1px solid #E1E1E1;
+}
+
+.mui-bar-tab .mui-tab-item:first-child {
+	background-color: #fff;
+	color: #a2a6a8;
+	font-size: 15px;
+}
+.mui-bar-tab .mui-tab-item:nth-child(2) {
+	background-color: #ff7e00;
+	color: #fff;
+	font-size: 17px;
+}
+.mui-bar-tab .mui-tab-item:nth-child(3) {
+	background-color: #ff4510;
+	color: #fff;
+	font-size: 17px;
+}
+
+.mui-bar-tab .mui-tab-item:first-child i {
+	font-style: normal;
+}
+/*地图*/
+.map{
+	/*width:100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	position: absolute;
+	margin-top: 65px;
+	top: 0;
+	bottom: 0;*/
+	
+	width: 100%;
+	position: fixed;
+	height: 270px;
+	top: 65px;
+	bottom: 0px;
+	line-height: 200px;
+	text-align: center;
+	background: #FFFFFF;
+}
+#map-cont{
+	position: fixed;
+	background-color: rgba(50,50,50,.5);
+	width: 100%;
+	height: 300px;
+	display: none;
+	z-index: 9999;
+	top: 65px;
+}

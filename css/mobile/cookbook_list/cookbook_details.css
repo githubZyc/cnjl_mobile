@@ -1,0 +1,190 @@
+body,html,.mui-content{
+	background: #F2F2F2;
+}
+.mui-bar-nav~.mui-content {
+    padding-top: 65px;
+}
+.mui-bar-nav {
+	box-shadow: none;
+	background: #fff;
+}
+.mui-bar{
+	padding-left: 10px;
+	padding-right: 15px;
+}
+.mui-bar-nav h1 {
+	font-size: 18px;
+	color: #000;
+}
+
+.mui-bar-nav a {
+	color: #000;
+}
+
+.mui-bar-nav button.mui-btn-link {
+	font-size: 15px;
+	color: #222;
+	border: none;
+}
+
+.mui-bar .mui-btn-link:active {
+	color: #222;
+}
+.img-intro,.img-intro img{
+	width: 100%;
+}
+
+.author-intro.mui-table-view .mui-media-object {
+    line-height: 45px;
+    max-width: 45px;
+    height: 45px;
+}
+.author-intro .mui-media-body{
+	font-size: 11px;
+	color: #aaa;
+}
+.author-intro .mui-media-body img{
+	margin-right: 6px;
+}
+.author-intro .mui-media-body p span:first-child,.remark p{
+	color: #222;
+	font-size: 15px;
+}
+.remark{
+	padding: 25px 15px;
+	line-height: 24px;
+	background-color: #fff;
+}
+/*ingredients配料*/
+.ingredients.mui-table-view,.step-intro.mui-table-view{
+	margin-top: 11px;
+	padding: 1px 15px;
+}
+.ingredients.mui-table-view h3{
+	font-size: 16px;
+	color: #2e3133;
+}
+.ingredients.mui-table-view .mui-table-view-cell{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	height: 45px;
+	line-height: 45px;
+	color: #aaa;
+}
+.ingredients.mui-table-view .mui-table-view-cell:after{
+	height: 1px;
+	left: 0;
+	background-color: #E1E1E1;
+	
+}
+.ingredients.mui-table-view .mui-table-view-cell span{
+	color: #222
+}
+/*具体步骤*/
+.step-intro .mui-table-view-cell{
+	padding: 0;
+}
+.step-intro .mui-table-view-cell:first-child{
+	    margin-top: 15px;
+}
+.step-intro .mui-table-view-cell img{
+	margin: 15px 0;
+}
+/*评价列表*/
+
+.mui-table-view-cell:after,
+.mui-table-view:before,
+.mui-table-view:after {
+	height: 0;
+}
+
+.evaluate-list .mui-table-view-cell:first-child{
+	font-size: 16px;
+	font-weight: 600;
+	color: #222;
+}.evaluate-list .mui-table-view-cell:first-child span{
+	font-weight: normal;
+	color: #FF4510;
+	margin-right: 16px;
+}.evaluate-list .mui-table-view-cell .mui-media-object {
+	width: 21px;
+	height: 21px;
+	line-height: 21px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.evaluate-list .mui-table-view-cell .mui-media-object img {
+	width: 100%;
+}
+
+.evaluate-list .mui-table-view-cell .mui-media-body,.evaluate-list
+.mui-table-view-cell .mui-media-body p {
+	font-size: 14px;
+	color: #222;
+}
+
+.evaluate-list .mui-table-view-cell .mui-media-body span {
+	font-size: 12px;
+	color: #aaa;
+}
+
+.evaluate-list .mui-table-view-cell>a:not(.mui-btn){
+	white-space: initial;
+}
+/*作者回复*/
+
+.evaluate-list .mui-table-view-cell .mui-table-view{
+	margin-top: 10px;
+}
+.evaluate-list .mui-table-view-cell .mui-table-view-cell {
+	padding: 0 0 0 31px;
+}
+.mui-table-view-cell .mui-table-view-cell.mui-active,.mui-table-view-cell.mui-active,.mui-table-view-cell>a:not(.mui-btn).mui-active {
+	background-color: transparent;
+}
+
+.evaluate-list .mui-table-view-cell .mui-table-view-cell .mui-media-body {
+	font-size: 14px;
+	color: #ff4510;
+}
+
+
+/*评分*/
+
+.mui-inline {
+	display: block;
+}
+
+.mui-icon-star-filled:before {
+	color: #ff470f;
+	font-size: 16px;
+}
+
+.mui-icon-star:before {
+	font-size: 16px;
+}
+/*底部按钮*/
+nav.mui-bar-tab{
+	box-shadow: none;
+	background: #fff;
+	border-top: 1px solid #e1e1e1;
+	line-height: 50px;
+}
+nav.mui-bar-tab button{
+	border: none;
+	font-size: 15px;
+	color: #aaa;
+}
+nav.mui-bar-tab button:first-child{
+	margin-right: 30px;
+}
+nav.mui-bar-tab button img{
+	vertical-align: middle;
+	margin-right: 7px;
+}
+.mui-btn:enabled:active{
+	color: #aaa;
+	background: transparent;
+}

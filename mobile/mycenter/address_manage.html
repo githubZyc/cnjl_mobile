@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/mobile/no_data.css"/>
+		<link rel="stylesheet" href="../../css/mobile/mycenter/address_manage.css" />
+	</head>
+
+	<body bgcolor="#F2F2F2">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">地址管理</h1>
+		</header>
+		<div class="mui-content">
+			<div class="no-data" v-show="customberAddress.length<=0">
+				<img src="../../images/tab_10.png"/>
+				<p>暂无数据</p>
+			</div>
+			<div class="address-mess" v-show="customberAddress.length>0" v-for="address in customberAddress">
+				<div class="username">
+					<h5 v-text="address.receiver+'&nbsp&nbsp&nbsp'+address.phone"></h5>
+					<p class="mui-ellipsis-2" v-text="address.cityAddress+address.position+address.specificAddress"></p>
+				</div>
+				<ul class="radio-checked">
+					<li class="mui-radio mui-left">
+						<input name="radio" type="radio" :checked="address.isDefault ===1" :disabled="address.isDefault ===0">默认地址
+						<div class="mui-pull-right">
+							<span v-tap="upd(address)">
+								<img src="../../images/address_manage_03.png" width="13px"/>编辑</span>
+							<span class="del-btn" v-tap="del(address)">
+								<img src="../../images/address_manage_05.png" width="14px"/>删除</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<div class="add-btn">
+					<button class="mui-btn mui-btn-block mui-btn-primary" v-tap="addAddress">新建收货地址</button>
+				</div>
+		</nav>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mobile/mycenter/address_manage.js" type="text/javascript" charset="utf-8" ></script>
+	</body>
+
+</html>

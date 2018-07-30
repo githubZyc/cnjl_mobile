@@ -1,0 +1,95 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.mui-content{
+	background: url(../../images/login_bg.png) bottom center no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	padding-top: 1px;
+}
+header a{
+	color: #fff;
+}
+.login_cont{
+	background-color: #fff;
+	width: 90%;
+	height: ;
+	border-radius: 12px;
+	margin: 79px auto 0;
+}
+.login_logo {
+	text-align: center;
+}
+.login_logo img{
+	/*width: 50px;*/
+	margin: 30px auto;
+	padding-top:1px ;
+}
+.mui-input-group:before,.mui-input-group:after{
+	height: 0;
+}
+.mui-input-group .mui-input-row:after{
+	left: 0;
+     background-color: #e1e1e1;
+}
+.mui-input-group,.login_btn{
+	padding: 0 30px;
+}
+.mui-input-group .mui-input-row label{
+	width: 30%;
+    padding: 11px 0px;
+    font-size: 15px;
+    color: #ccc;
+}
+.login_btn button.mui-btn.mui-btn-block {
+	background: linear-gradient(to right, #ff4510,#ff6900);
+	height: 45px;
+	border-radius: 22px;
+	border: none;
+	line-height: 45px;
+	padding: 0;
+	margin-top: 30px;
+}
+.login_btn .link-area{
+	    text-align: center;
+}.login_btn .link-area a:first-child{
+	font-size: 14px;
+	color: #FF4510;
+	margin-right:55px;
+}
+.login_btn .link-area a:last-child{
+	font-size: 14px;
+	color: #aaa;
+}
+.other_login_title{
+	padding: 0 15px;
+	margin-top: 11px;
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+	padding: 14px 0;
+	line-height: 13px;
+}
+.other_login_title span{
+	font-size: 13px;
+	color: #a1a5a5;
+}
+.other_login_title img{
+	    margin-top: 5px;
+}
+.other_login_icon{
+	text-align: center;
+}
+
+.other_login_icon img:first-child{
+	margin-right: 50px;
+}
+.mui-input-row.mui-password .mui-input-clear~.mui-icon-clear {
+	    right: 16px;
+
+}
+.mui-input-row .mui-input-password~.mui-icon-eye.mui-active{
+	color: #ff530a;
+}

@@ -1,0 +1,339 @@
+.mui-content{
+	background-color: #F2F2F2;
+	    overflow: hidden;
+	padding-bottom: 50px;
+}
+.mui-bar.mui-bar-nav {
+	box-shadow: none;
+	background: #fff;
+	padding: 0 15px;
+}
+
+.mui-bar-nav h1 {
+	font-size: 18px;
+	color: #000;
+}
+
+.mui-bar-nav a {
+	color: #000;
+}
+
+.mui-bar-nav a img {
+	margin-top: 12px;
+	margin-right: 15px;
+}
+
+.mui-bar-nav a:nth-child(2) {
+	margin-top: 10px;
+}
+.product-intro {
+	background-color: #fff;	
+}
+.product-intro .product-intro-img{
+	width: 345px;
+	margin: 0 auto;
+	text-align: center;
+}
+.product-intro .product-intro-img img{
+	max-width: 100%;
+	max-height: 345px;
+}
+.product-intro h5{
+	text-align: center;
+	font-size: 18px;
+	line-height: 21px;
+	color: #222;
+	margin-top: 30px;
+	font-weight: 600;
+}
+.product-intro .collages-num{
+	text-align: center;
+	margin-top: 10px;
+	position: relative;
+	margin-bottom: 12px;
+}
+.product-intro .collages-num span{
+	display: inline-block;
+	font-size: 12px;
+	color: #222;
+	
+}
+.product-intro .collages-num span:first-child{
+	margin-right: 9px;
+	position: relative;
+	
+}
+.product-intro .collages-num span:last-child{
+	margin-left: 8px;
+}
+.product-intro .collages-num span:first-child:after{
+	content: '';
+	position: absolute;
+	width: 1px;
+	top: 5px;
+    right: -10px;
+	bottom: 6px;
+	background-color: #aaaaaa;
+}
+/*进度条*/
+
+#progress-bar {
+	overflow: hidden;
+	/*margin: 0 auto;
+	width: 185px;*/
+	line-height: 21px;
+	text-align: center;
+}
+#progress-bar i{
+	font-style: normal;
+	font-size: 11px;
+	color: #222;
+	margin-left: 6px;
+	display: inline-block;
+}
+#progress-bar p{
+	display: inline-block;
+	margin-bottom: 0;
+}
+.mui-progressbar { 
+	background-color: #E1E1E1;
+	height: 6px;
+	width: 150px;
+	    border-radius: 3px;
+}
+
+.mui-progressbar span {
+	background-color: #ff4c0d;
+}
+/*价格*/
+
+.product-price{
+	text-align: center;
+}
+.product-price h1{
+	font-size: 30px;
+	color: #FF4510;
+	font-weight: normal;
+}
+.product-price u{
+	font-size: 13px;
+	color: #aaa;
+	text-decoration: line-through;
+}
+.mui-table-view:before,.mui-table-view:after{
+	height: 0;
+}
+.product-text-intro{
+	margin-top: 11px;
+}.product-text-intro .mui-table-view-cell{
+	font-size: 15px;
+	color: #aaa;
+}.product-text-intro span{
+	font-size: 13px;
+	color: #222;
+}
+/*数量输入框*/
+.num-inp {
+	margin-top: 11px;
+}
+.num-inp .mui-input-row{
+	line-height: 47px;
+}
+.num-inp .mui-input-row label{
+	font-size: 15px;
+	color: #222;
+	padding: 0;
+	line-height: inherit;
+}
+.num-inp .mui-input-row .mui-numbox {
+	margin: 6px 8px;
+}
+.num-inp.mui-table-view .mui-table-view-cell .mui-input-row input.mui-input-numbox {
+	text-align: center;
+	line-height: 33px;
+	height: 33px;
+	font-size: 13px;
+	color: #000;
+}
+.collage-user.mui-table-view{
+	background: #fff;
+	margin: 0 15px;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.collage-user.mui-table-view h4{
+	font-size: 13px;
+	color: #FF4510;
+	background: #f2f2f2;
+	padding: 21px 0 10px;
+	margin: 0;
+}
+
+.collage-user.mui-table-view >span{
+	font-size: 12px;
+	color: #aaa;
+	background: #fff;
+	padding-left: 15px;
+	display: block;
+	padding-top: 13px;
+	border: 1px solid #e1e1e1;
+	border-bottom: none;
+}
+.collage-user.mui-table-view .mui-table-view-cell{
+	border: 1px solid #E1E1E1;
+	border-top: none;
+	border-bottom: none;
+}
+.collage-user.mui-table-view .mui-table-view-cell:after{
+	left: 15px;
+	background-color: #E1E1E1;
+}
+.collage-user.mui-table-view .mui-table-view-cell>a:not(.mui-btn).mui-active{
+	background-color: transparent;
+	
+}
+.collage-user.mui-table-view .mui-media-object{
+	overflow: hidden;
+	max-width: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.collage-user.mui-table-view .mui-media-object img{
+	max-width: 100%;
+}
+
+.collage-user.mui-table-view .mui-media-body{
+	font-size: 12px;
+	color: #222;
+}
+.collage-user.mui-table-view .mui-media-body p{
+	font-size: 12px;
+	color: #aaa;
+}
+.collage-user.mui-table-view .mui-media-body p span{
+	color: #ccc;
+}
+/*评价列表*/
+
+.evaluate-list.mui-table-view{
+	margin-top: 21px;
+	background-color: inherit;
+}
+.evaluate-list .mui-table-view-cell:after,
+.evaluate-list.mui-table-view:before,
+.evaluate-list.mui-table-view:after {
+	height: 0;
+}
+
+.evaluate-list .mui-table-view-cell{
+	    background: #fff;
+	    margin-top: 11px;
+}.evaluate-list .mui-table-view-cell .mui-media-object {
+	width: 21px;
+	height: 21px;
+	line-height: 21px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.evaluate-list .mui-table-view-cell .mui-media-object img {
+	width: 100%;
+}
+
+.evaluate-list .mui-table-view-cell .mui-media-body,
+.evaluate-list .mui-table-view-cell .mui-media-body p {
+	font-size: 14px;
+	color: #222;
+}
+.evaluate-list .mui-table-view-cell .mui-media-body p {
+	margin-top: 6px;
+}
+
+.evaluate-list .mui-table-view-cell .mui-media-body span {
+	font-size: 12px;
+	color: #aaa;
+}
+
+.evaluate-list .mui-table-view-cell>a:not(.mui-btn){
+	white-space: initial;
+}
+/*作者回复*/
+
+.evaluate-list .mui-table-view-cell .mui-table-view{
+	margin-top: 10px;
+}
+.evaluate-list .mui-table-view-cell .mui-table-view-cell {
+	padding: 0 0 0 31px;
+}
+.evaluate-list .mui-table-view-cell .mui-table-view-cell.mui-active,.mui-table-view-cell>a:not(.mui-btn).mui-active {
+	background-color: transparent;
+}
+
+.evaluate-list .mui-table-view-cell .mui-table-view-cell .mui-media-body {
+	font-size: 14px;
+	color: #ff4510;
+}
+.show{
+	display: block;
+}
+
+.hide{
+	display: none;
+}
+/*评论图片*/
+.evaluate-list .evaluate-img-showbtn{
+	font-size: 12px;
+	color: #222;
+	margin: 15px 0 20px;
+}
+.evaluate-list .evaluate-img-showbtn span{
+	margin-left: 5px;
+}
+.evaluate-list .evaluate-img img{
+	max-width: 100px;
+}
+/*评分*/
+
+.evaluate-list .mui-inline {
+	display: block;
+}
+
+.evaluate-list .mui-icon-star-filled:before {
+	color: #ff470f;
+	font-size: 16px;
+}
+
+.evaluate-list .mui-icon-star:before {
+	font-size: 16px;
+}
+/*底部按钮*/
+
+.mui-bar-tab.mui-bar {
+	box-shadow: none;
+	border-top: 1px solid #E1E1E1;
+	z-index: 999;
+	bottom: 0;
+}
+
+.mui-bar-tab .mui-tab-item:first-child {
+	background-color: #fff;
+	color: #a2a6a8;
+	font-size: 15px;
+}
+
+.mui-bar-tab .mui-tab-item:nth-child(2) {
+	background-color: #ff7e00;
+	color: #fff;
+	font-size: 17px;
+}
+
+.mui-bar-tab .mui-tab-item:nth-child(3) {
+	background-color: #ff4510;
+	color: #fff;
+	font-size: 17px;
+}
+
+.mui-bar-tab .mui-tab-item:first-child i {
+	font-style: normal;
+}

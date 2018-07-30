@@ -1,0 +1,244 @@
+#header {
+	padding: 0 15px;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.mui-bar h1 {
+	font-size: 18px;
+	color: #fff;
+}
+
+.index_mess {
+	line-height: 44px;
+}
+
+.index_mess img {
+	width: 19px;
+	height: 19px;
+	vertical-align: middle;
+}
+
+.index_mess e {
+	width: 7px;
+	height: 7px;
+	background: red;
+	border-radius: 50%;
+	position: absolute;
+	right: -2px;
+	top: 0px;
+}
+
+.personal-cont {
+	height: 320px;
+	background-color: #fff;
+	margin-bottom: 11px;
+}
+
+.mui-content .personal-mess {
+	background: #fff url(../../images/mycenter_icon_01.png) top center no-repeat;
+	width: 100%;
+	height: 234px;
+	background-size: 100% 100%;
+	padding-top: 1px;
+}
+
+
+/*头像*/
+
+.personal-photo {
+	width: 84px;
+	height: 84px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin: 100px auto 0;
+}
+
+.personal-photo img {
+	width: 85px;
+	height: 85px;
+}
+
+.personal-name.mui-table-view {
+	background: transparent;
+	line-height: 44px;
+}
+
+.personal-name.mui-table-view .mui-table-view-cell {
+	padding: 0;
+	width: 100px;
+}
+
+.personal-name.mui-table-view a .mui-media-body {
+	font-size: 16px;
+	color: #fff;
+}
+
+.personal-name.mui-table-view a .mui-media-object {
+	width: 28px;
+	height: 28px;
+	max-width: 28px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	margin-top: 8px;
+	overflow: hidden;
+}
+
+.personal-name.mui-table-view a .mui-media-object img {
+	width: 100%;
+}
+
+.personal-name.mui-table-view a.mui-navigate-right:after {
+	right: -3px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.personal-mess .mui-table-view {
+	overflow: hidden;
+	margin-top: 90px;
+	padding-bottom: 35px;
+	text-align: center;
+	background-color: transparent;
+}
+
+.personal-mess .mui-table-view .mui-table-view-cell {
+	    width: 150px;
+	height: 52px;
+	padding: 0;
+	text-align: center;
+	display: inline-block;
+}
+
+.personal-mess .mui-table-view .mui-table-view-cell:after,
+.personal-mess .mui-table-view:before,
+.personal-mess .mui-table-view:after {
+	height: 0;
+}
+
+.personal-mess .mui-table-view .mui-table-view-cell:first-child {
+	border-right: 1px solid rgba(255, 255, 255, .6);
+}
+
+.personal-mess .mui-table-view .mui-table-view-cell a {
+	font-size: 24px;
+	color: #fff;
+}
+
+.personal-mess .mui-table-view .mui-table-view-cell p {
+	font-size: 14px;
+	color: #fff;
+	opacity: .7;
+     margin-bottom: 10px;
+}
+
+.personal-mess .mui-table-view-cell>a:not(.mui-btn) {
+	padding: 0;
+	margin: 0;
+}
+
+.personal-mess .mui-table-view-cell>a:not(.mui-btn).mui-active {
+	background: transparent;
+}
+
+.personal-mess .mui-navigate-right:after {
+	right: 2px;
+	color: #fff;
+}
+.personal-mess .mui-table-view-cell:last-child .mui-navigate-right:after {
+	right: 25px;
+}
+
+.center-classify {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.center-classify>div {
+	width: 24%;
+	margin-left: 1%;
+	text-align: center;
+}
+
+.center-classify div p {
+	text-align: center;
+	font-size: 12px;
+	color: #333333;
+	margin-top: 7px;
+	margin-bottom: 0;
+}
+
+.center-classify div:nth-child(2) p {
+	margin-top: 10px;
+}
+
+.center-classify div:nth-child(3) p {
+	margin-top: 9px;
+}
+
+.center-classify div a {
+	display: block;
+}
+
+.y-smallimg {
+	position: relative;
+}
+
+.y-smallimg span {
+	position: absolute;
+	text-align: center;
+	display: block;
+	width: 18px;
+	height: 18px;
+	line-height: 20px;
+	background: #ff4510;
+	border-radius: 50%;
+	top: -8px;
+	right: 8px;
+	/*padding: 10px;*/
+	font-size: 9px;
+	color: #fff;
+}
+
+
+/*列表*/
+
+.mui-content .mui-table-view-cell.mui-media {
+	height: 60px;
+	line-height: 60px;
+	padding: 0 0 0 15px;
+}
+
+.mui-table-view:before,
+.mui-table-view:after {
+	height: 0;
+}
+
+.mui-content .mui-table-view .mui-media-object {
+	height: auto;
+	margin-top: 18px;
+}
+
+.mui-media-body {
+	font-size: 16px;
+	color: #222;
+}
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	margin: 0;
+	padding: 0;
+}
+
+.mui-table-view-cell>a:not(.mui-btn).mui-active {
+	background: transparent;
+}
+
+.mui-content .mui-table-view-cell:after {
+	left: 50px;
+	background: #E1E1E1;
+}

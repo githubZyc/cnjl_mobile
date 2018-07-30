@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-开店子页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" href="../css/mobile/no_data.css" />
+		<link rel="stylesheet" href="../css/mobile/set_shop_subpage.css" />
+		<style type="text/css">
+			.mui-content{
+				margin-top: 24px;
+			}
+		</style>
+	</head>
+
+	<body style="background: #f2f2f2;">
+		<header class="mui-bar mui-bar-nav" style="background-color: white;">
+			<h1 class="mui-title">选择管理的门店</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-scroll">
+				<div class="no-data" v-show="shops.length==0">
+					<img src="../images/tab_10.png"/>
+					<p>暂无数据</p>
+				</div>
+				<ul class="mui-table-view" v-show="!shops.length==0">
+					<li class="mui-table-view-cell" v-for=" shop in shops" :data-shop-id="shop.shopId" v-tap="goShopIndex(shop.shopName,shop.shopId)">
+						<a class="mui-navigate-right" v-text="shop.shopName"></a>
+					</li>
+				</ul>
+				<div class="add-shop">
+					<button class="mui-btn mui-btn-block mui-btn-primary" v-tap="addShop">添加门店</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/mobile/set_shop_subpage.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

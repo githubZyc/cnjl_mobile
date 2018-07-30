@@ -1,0 +1,30 @@
+.mui-bar-nav {
+	box-shadow: none;
+	background: #fff;
+}
+
+.mui-bar-nav h1 {
+	font-size: 18px;
+	color: #000;
+}
+
+.mui-bar-nav a {
+	color: #000;
+}
+.tishi{
+	font-size: 13px;
+	color: #000;
+	margin: 32px 0 0 15px;
+	height: 48px;
+	line-height: 48px;
+}
+.mui-table-view:before,.mui-table-view:after{
+	height: 0;
+}
+.mui-table-view-cell:after{
+	background-color: #E1E1E1;
+}
+.mui-switch-blue.mui-active{
+	border-color: #00e567;
+	background-color: #00e567;
+}

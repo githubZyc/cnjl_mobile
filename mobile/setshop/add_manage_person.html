@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/mobile/setshop/add_manage_person.css" />
+	</head>
+
+	<body bgcolor="#F2F2F2">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">添加管理人员</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-content-padded">
+				<div class="mui-input-row manage-name-inp">
+					<input id='manage-name' type="text" class="mui-input-clear mui-input" placeholder="请输入管理人员姓名">
+				</div>
+				<form id='tel-form' class="mui-input-group">
+					<div class="mui-input-row">
+						<input id='account' type="number" class="mui-input-clear mui-input" placeholder="请输入手机号码" maxlength="11">
+					</div>
+					<div class="mui-input-row code-inp">
+						<input id='code' type="number" class="mui-input mui-input-clear " placeholder="验证码" maxlength="4">
+						<button type="button" class="code-btn" v-tap="sendMessageCode">发送验证码</button>
+					</div>
+				</form>
+				<div class="sure-btn">
+					<button id='sure' class="mui-btn mui-btn-block mui-btn-primary" v-tap="addAdmin">确定</button>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../../js/mobile/setshop/add_mange_person.js"></script>
+
+	</body>
+
+</html>

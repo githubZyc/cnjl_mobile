@@ -1,0 +1,60 @@
+html,
+header {
+	background: #fff;
+}
+
+header a {
+	color: #000;
+}
+
+header h1 {
+	color: #000;
+	font-size: 18px;
+}
+
+.mui-bar-nav.mui-bar {
+	box-shadow: none;
+	background: #fff;
+}
+.mui-content>.mui-table-view:first-child {
+    /*margin-top: 32px;*/
+}
+.mui-table-view-cell:after{
+	left: 15px;
+	background-color: #E1E1E1;
+}
+.mui-table-view-cell a{
+	font-size: 16px;
+	color: #222;
+}
+.mui-table-view:before,.mui-table-view:after{
+	height: 0;
+}
+
+.quit-btn{
+	padding: 0 15px;
+}
+.quit-btn button.mui-btn.mui-btn-block {
+	background: linear-gradient(to right, #ff4510, #ff6900);
+	height: 45px;
+	border-radius: 22px;
+	border: none;
+	line-height: 45px;
+	padding: 0;
+	margin-top: 30px;
+}
+
+.quit-btn .link-area {
+	text-align: center;
+}
+
+.quit-btn .link-area a:first-child {
+	font-size: 14px;
+	color: #FF4510;
+	margin-right: 55px;
+}
+
+.quit-btn .link-area a:last-child {
+	font-size: 14px;
+	color: #aaa;
+}

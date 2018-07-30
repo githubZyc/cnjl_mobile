@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-添加样品库页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/mobile/setshop/storehouse_add_goodsclassify.css" />
+	</head>
+
+	<body style="background: #f2f2f2;">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">添加商品</h1>
+		</header>
+		<nav class="mui-bar mui-bar-nav">
+			<div class="mui-input-row mui-search">
+				<input id="commodityNameOrBarCode" type="search" class="mui-input-clear" placeholder="请输入要搜索的商品">
+				
+			</div>
+			<span v-tap="searchCommodity">搜索</span>
+		</nav>
+		<div class="mui-content mui-fullscreen" style="width: 25%;">
+			<div id="" class="mui-scroll">
+				<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+					<a class="mui-control-item mui-active" href="#content1" v-tap="showCommodity('01',0,1)">蔬菜</a>
+					<a class="mui-control-item" href="#content1" v-tap="showCommodity('02',1,1)">水果</a>
+					<a class="mui-control-item" href="#content1" v-tap="showCommodity('03',2,1)">蛋肉水产</a>
+					<a class="mui-control-item" href="#content1" v-tap="showCommodity('04',3,1)">干货</a>
+					<a class="mui-control-item" href="#content1" v-tap="showCommodity('05',4,1)">熟食</a>
+					<a class="mui-control-item" href="#content1" v-tap="showCommodity('06',5,1)">活海鲜</a>
+					<a class="mui-control-item" href="#content1" v-tap="showCommodity('07',6,1)">冰海鲜</a>
+					<a class="mui-control-item" href="#content1" v-tap="showCommodity('08',7,1)">散装食品</a>
+					<a class="mui-control-item" href="#content1" v-tap="showCommodity('09',8,1)">包装食品</a>
+					<a class="mui-control-item" href="#content1" v-tap="showCommodity('10',9,1)">日用百货</a>
+					<a class="mui-control-item" href="#content1" v-tap="showCommodity('11',9,1)">药膳</a>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mobile/setshop/storehouse_add_goodsclassify.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-菜谱详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/icons-extra.css" />
+		<link rel="stylesheet" href="../../css/imgload.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/mobile/no_data.css" />
+		<link rel="stylesheet" href="../../css/mobile/cookbook_list/cookbook_details.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<a class="mui-icon mui-icon-extra mui-icon-extra-share mui-pull-right"></a>
+			<h1 class="mui-title" v-text="cookMenuDetail.cook_book_name"></h1>
+		</header>
+		<div class="mui-content">
+			<div class="img-intro">
+				<img :src="cookMenuDetail.cook_menu_pic" onerror="src='../../images/commodity-sample/no.png'"/>
+			</div>
+			<ul class="mui-table-view author-intro">
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img style="border-radius:50%;" class="mui-media-object mui-pull-left" :src="cookMenuDetail.heartImage"  onerror="src='../../images/personal_photo_default_03.png'">
+						<div class="mui-media-body">
+							<img src="../../images/cookbook_details_03.png" width="10px" />作者<span class="mui-pull-right">菜谱创建于</span>
+							<p class=""><span class="mui-pull-left" v-text="cookMenuDetail.customberName"></span><span class="mui-pull-right" v-text="createTime"></span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="remark">
+				<p v-text="cookMenuDetail.cook_desc"></p>
+			</div>
+			<ul class="mui-table-view ingredients"><!--ingredients配料-->
+				<h3>配料</h3>
+				<li class="mui-table-view-cell" v-for="mainCook in mainCookList">
+					{{mainCook.split(":")[0]}}<span class="mui-pull-right" v-text="mainCook.split(':')[1]"></span>
+				</li>
+			</ul>
+			<template v-if="cookMenuStepList.length>0">
+				<ul class="mui-table-view step-intro" id="ul-list">
+					<li class="mui-table-view-cell" v-for="(index,cookMenuStep) in cookMenuStepList">
+						{{cookMenuStep.stepNumber}}{{cookMenuStep.stepDesc}}
+						<img class="anim_opacity" src="../../images/commodity-sample/no.png"  :data-src="cookMenuStep.stepPic" width="100%"  v-tap="showPreviewImage(index)"/>
+					</li>
+				</ul>
+			</template>
+			<!--<ul class="mui-table-view evaluate-list">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						这道菜的评价
+						<span class="mui-pull-right">3886条评价</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<div class="mui-media-object mui-pull-left">
+							<img class="" src="../../images/order_manage_07.png">
+						</div>
+						<div class="mui-media-body">
+							小小小柠檬<span class="mui-pull-right">2017-04-23 16:48</span>
+							<div class="icons mui-inline">
+								<i data-index="1" class="mui-icon mui-icon-star mui-icon-star-filled"></i>
+								<i data-index="2" class="mui-icon mui-icon-star mui-icon-star-filled"></i>
+								<i data-index="3" class="mui-icon mui-icon-star mui-icon-star-filled"></i>
+								<i data-index="4" class="mui-icon mui-icon-star"></i>
+								<i data-index="5" class="mui-icon mui-icon-star"></i>
+							</div>
+							<p class="">高端大气上档次，这是要买买是要买买是要买买买的节奏么……</p>
+						</div>
+					</a>
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-media-body">
+								作者回复<span class="mui-pull-right">2017-04-23 16:48</span>
+								<p class="">高端大气上档次，这是要买买买的节奏么……</p>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<div class="mui-media-object mui-pull-left">
+							<img class="" src="../../images/order_manage_07.png">
+						</div>
+						<div class="mui-media-body">
+							小小小柠檬<span class="mui-pull-right">2017-04-23 16:48</span>
+							<div class="icons mui-inline">
+								<i data-index="1" class="mui-icon mui-icon-star mui-icon-star-filled"></i>
+								<i data-index="2" class="mui-icon mui-icon-star mui-icon-star-filled"></i>
+								<i data-index="3" class="mui-icon mui-icon-star"></i>
+								<i data-index="4" class="mui-icon mui-icon-star"></i>
+								<i data-index="5" class="mui-icon mui-icon-star"></i>
+							</div>
+							<p class="">高端大气上档次，这是要买买买的节奏么……</p>
+						</div>
+					</a>
+				</li>
+			</ul>-->
+		</div>
+		<!--<nav class="mui-bar mui-bar-tab">
+			<button type="button" class="mui-btn"><img src="../../images/cookbook_details_3.png" width="18px"/>我要评价</button>
+			<button type="button" class="mui-btn"><img src="../../images/cookbook_details_05.png" width="17px"/>发布菜谱</button>
+		</nav>-->
+		<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lazy-load-img.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mobile/cookbook/cookbook_details.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

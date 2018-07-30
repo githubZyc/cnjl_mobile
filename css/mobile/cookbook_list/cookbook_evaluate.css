@@ -1,0 +1,94 @@
+.mui-bar-nav {
+	box-shadow: none;
+	background: #fff;
+}
+.mui-bar{
+	padding-left: 10px;
+	padding-right: 15px;
+}
+.mui-bar-nav h1 {
+	font-size: 18px;
+	color: #000;
+}
+
+.mui-bar-nav a {
+	color: #000;
+}
+
+.mui-bar-nav button.mui-btn-link {
+	font-size: 15px;
+	color: #222;
+	border: none;
+}
+
+.mui-bar .mui-btn-link:active {
+	color: #222;
+}
+
+
+/*评价列表*/
+
+.mui-table-view-cell:after,
+.mui-table-view:before,
+.mui-table-view:after {
+	height: 0;
+}
+
+.mui-table-view-cell .mui-media-object {
+	width: 21px;
+	height: 21px;
+	line-height: 21px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.mui-table-view-cell .mui-media-object img {
+	width: 100%;
+}
+
+.mui-table-view-cell .mui-media-body,
+.mui-table-view-cell .mui-media-body p {
+	font-size: 14px;
+	color: #222;
+}
+
+.mui-table-view-cell .mui-media-body span {
+	font-size: 12px;
+	color: #aaa;
+}
+
+.mui-table-view-cell>a:not(.mui-btn){
+	white-space: initial;
+}
+/*作者回复*/
+
+.mui-table-view-cell .mui-table-view{
+	margin-top: 10px;
+}
+.mui-table-view-cell .mui-table-view-cell {
+	padding: 0 0 0 31px;
+}
+.mui-table-view-cell .mui-table-view-cell.mui-active,.mui-table-view-cell>a:not(.mui-btn).mui-active {
+	background-color: transparent;
+}
+
+.mui-table-view-cell .mui-table-view-cell .mui-media-body {
+	font-size: 14px;
+	color: #ff4510;
+}
+
+
+/*评分*/
+
+.mui-inline {
+	display: block;
+}
+
+.mui-icon-star-filled:before {
+	color: #ff470f;
+	font-size: 16px;
+}
+
+.mui-icon-star:before {
+	font-size: 16px;
+}

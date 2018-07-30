@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-开店子页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/mobile/setshop/custom_add_product.css" />
+	</head>
+
+	<body style="background: #f2f2f2;">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">添加商品</h1>
+		</header>
+		<div class="mui-content">
+			<div class="add-product-photo">
+				<div class="">
+					<img v-tap="addCommodityImage()" :src="commodityImg.commodityMainPic"/>
+					<p>添加商品主图</p>
+				</div>
+			</div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell go-list" v-tap="chooseCommodityType">
+					<a class="mui-navigate-right">
+						
+						<div class="mui-input-row">
+							<label>类别</label>
+							<input type="text" readonly="readonly" class="" :placeholder="commodityType.content">
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					
+					<div class="mui-input-row">
+						<label>条码</label>
+						<input id='barCode' type="text" class="" placeholder="请输入条码（没有可不填）">
+					</div>
+				</li>
+			</ul>
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell">
+					
+					<div class="mui-input-row">
+						<label>品名</label>
+						<input id='commodityName' type="text" class="" placeholder="请输入商品名称">
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					
+					<div class="mui-input-row">
+						<label>单位</label>
+						<input id="unit" type="text" class="" placeholder="请输入计价单位">
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					
+					<div class="mui-input-row">
+						<label>单价（元）</label>
+						<input id="unitPrice" type="number" class="" placeholder="请输入单价">
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					上下架
+					<div class="mui-switch mui-switch-blue mui-switch-mini mui-active">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<div class="mui-input-row">
+						<label style="width: 20%;">备注</label>
+						<textarea id="commodityDescribe" style="width: 75%;" type="text" class="" placeholder="请输入备注信息"></textarea>
+					</div>
+				</li>
+			</ul>
+		</div>
+			<nav class="mui-bar sure-btn">
+				<button v-tap="addMyShop" class="mui-btn mui-btn-block mui-btn-primary">确认</button>
+			</nav>
+	</body>
+	<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mobile/setshop/custom_add_product.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

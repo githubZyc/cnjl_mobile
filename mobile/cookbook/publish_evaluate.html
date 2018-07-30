@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-发表评价</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/imgload.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/mobile/no_data.css" />
+		<link rel="stylesheet" href="../../css/mobile/cookbook_list/publish_evaluate.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<button class="mui-btn mui-btn-link mui-pull-right" v-tap="">提交</button>
+			<h1 class="mui-title">发表评价</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="../../images/publish_evaluate_03.png">
+						<div class="mui-media-body">
+							糖醋胭脂萝卜
+							<div class="icons mui-inline">
+								<i data-index="1" class="mui-icon mui-icon-star mui-icon-star-filled"></i>
+								<i data-index="2" class="mui-icon mui-icon-star mui-icon-star-filled"></i>
+								<i data-index="3" class="mui-icon mui-icon-star mui-icon-star-filled"></i>
+								<i data-index="4" class="mui-icon mui-icon-star"></i>
+								<i data-index="5" class="mui-icon mui-icon-star"></i>
+							</div>
+						</div>
+					</a>
+				</li>
+
+			</ul>
+			<div class="text-evaluate">
+				<textarea name="" rows="" cols="" maxlength="800" placeholder="请输入你对此菜谱的评价~"></textarea>
+				<div class="word-num">
+					<span>0</span>
+					<span>/800</span>
+				</div>
+			</div>
+			<form class="mui-input-group">
+				<div class="mui-input-row mui-checkbox mui-left">
+					<label>匿名评价</label>
+					<input name="checkbox" value="Item 1" type="checkbox">
+				</div>
+			</form>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="../../js/immersed.js"></script>
+		<script type="text/javascript" src="../../js/mobile/cookbook/publish_evaluate.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

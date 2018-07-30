@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/mobile/no_data.css"/>
+		<link rel="stylesheet" href="../../css/mobile/setshop/manage_person_list.css" />
+	</head>
+
+	<body bgcolor="#F2F2F2">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<!--<button class="mui-btn mui-btn-blue mui-btn-link mui-pull-right" v-tap="showDel">编辑</button>-->
+			<h1 class="mui-title">管理人员</h1>
+		</header>
+		<div class="mui-content">
+			<template v-if="shopAdminList.length<=0">
+				<div class="no-data">
+					<img src="../../images/tab_10.png"/>
+					<p>暂无数据</p>
+				</div>
+			</template>
+			
+			<template v-if="shopAdminList.length>0">
+				<ul id="person-list" class="mui-table-view">
+					<li class="mui-table-view-cell" v-for="shopAdmin in shopAdminList">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red" v-tap="delThis($event,shopAdmin)">删除</a>
+						</div>
+						<div class="mui-slider-handle  mui-checkbox">
+							<a class="mui-navigate-right">
+								<input type="checkbox" name="" class="mui-pull-left" value="" />
+								<span class="mui-pull-right">{{shopAdmin.shopAdminPhone}}</span> {{shopAdmin.shopAdminName}}
+							</a>
+						</div>
+					</li>
+				</ul>
+			</template>
+			<div class="add-btn">
+				<button class="mui-btn mui-btn-block mui-btn-primary" v-tap="addManagePerson">添加管理人员</button>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mobile/setshop/manage_person_list.js" type="text/javascript" ></script>
+
+	</body>
+
+</html>

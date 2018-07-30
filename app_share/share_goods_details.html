@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-开店子页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/mui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css"/>
+		<link rel="stylesheet" type="text/css" href="css/share_goods_detail.css"/>
+		<style type="text/css">
+			#downloadBar {
+				top: auto!important;
+				bottom: 0;
+				height: 55px;
+			}
+			
+			#downloadBar {
+				width: 100%;
+				position: fixed;
+				top: 0;
+				color: #fff;
+				font-size: 15px;
+				box-sizing: border-box;
+				z-index: 99999;
+			}
+			
+			#downloadBar span {
+				display: block;
+				width: 100%;
+				height: 55px;
+				padding-left: 76px;
+				line-height: 55px;
+				background-color: #000;
+				opacity: 0.7;
+			}
+			
+			#downloadBar .bar-item.downloadbar-close {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 36px;
+				background-image: url(img/close_btn.png);
+				background-size: 50%;
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+			
+			#downloadBar .bar-item {
+				height: 55px;
+				line-height: 55px;
+			}
+			
+			#downloadBar .bar-item {
+				height: 55px;
+				line-height: 55px;
+			}
+			
+			#downloadBar .bar-item.downloadbar-open {
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 70px;
+				background-color: #D74B28;
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			#downloadBar .bar-item {
+				height: 55px;
+				line-height: 55px;
+			}
+		</style>
+	</head>
+
+	<body style="background: #f2f2f2;">
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">商品详情</h1>
+		</header>
+		<div class="mui-content">
+			<div class="add-product-photo">
+				<div class="">
+					<div class="">
+						<img src="../images/good_list_icon_03.png" class="anim_opacity" />
+					</div>
+					<h5>胡萝卜</h5>
+					<p>￥10.90/斤</p>
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">商品介绍
+							<span class="mui-pull-right">泡菜染色的原材料</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="mui-table-view address-distance">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>成田路 九龙城生活超市</label>
+							<input type="text" readonly="readonly" class="" placeholder="1089m">
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+
+					<div class="mui-input-row">
+						<label>购买数量</label>
+						<div class="mui-numbox" data-numbox-min='0'>
+							<button disabled="disabled" class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+							<input class="mui-input-numbox" type="number" />
+							<button disabled="disabled" class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					
+					<div class="mui-input-row">
+						<label style="width: 20%;">备注</label>
+						<input style="width: 75%;" type="text" readonly="readonly" class="" placeholder="">
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="downloadBar">
+			<span>下载APP体验更多惊喜</span>
+			<div class="bar-item downloadbar-close"></div>
+			<div class="bar-item downloadbar-logo"></div>
+			<div class="bar-item downloadbar-open">打开APP</div>
+		</div>
+	</body>
+	<script src="../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		var downloadBar = document.getElementById("downloadBar");
+		if(mui.os.plus || window.top != window) {
+			downloadBar.style.display = 'none'
+		}
+		document.querySelector('.downloadbar-close').addEventListener('click', function() {
+			downloadBar.style.display = 'none'
+		})
+		document.querySelector('.downloadbar-open').addEventListener('click', function() {
+			var ua = navigator.userAgent,
+				targetHref;
+			if(!/Mobile/i.test(ua)) {
+				if(/Macintosh/i.test(ua)) {
+					targetHref = 'https://itunes.apple.com/cn/app/id907931805';
+				} else {
+					targetHref = 'http://download.dcloud.net.cn/HelloMUI.apk';
+				}
+			} else {
+				if(/iPhone|iPad/i.test(ua)) {
+					targetHref = 'http://a.app.qq.com/o/simple.jsp?pkgname=io.dcloud.HelloMUI';
+				} else {
+					targetHref = 'http://fusion.qq.com/app_download?appid=1103417770&platform=qzone&via=QZ.MOBILEDETAIL.QRCODE&u=3046917960'
+				}
+			}
+			window.location.href = targetHref;
+		})
+		
+		
+		//http://192.168.1.128:8083/CNJL/static/app_share/share_goods_details.html?commodityName=%E8%83%A1%E8%90%9D%E5%8D%9C&priceAndUnit=%EF%BF%A510.90/%E6%96%A4&description=%E5%A5%BD%E8%8F%9C%E5%95%8A&locationAddress=%E4%B9%9D%E9%BE%99%E5%9F%8E%E7%94%9F%E6%B4%BB%E8%B6%85%E5%B8%82
+	</script>
+
+</html>

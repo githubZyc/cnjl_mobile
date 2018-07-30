@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/mobile/mycenter/setting.css" />
+	</head>
+
+	<body bgcolor="#F2F2F2">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">系统设置</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view list-setting">
+				<li class="mui-table-view-cell" v-tap="goMessageSetting">
+					<a class="mui-navigate-right">
+						消息设置
+					</a>
+				</li>
+				<li class="mui-table-view-cell" v-tap="clearStorage">
+					<a class="mui-navigate-right">
+						清理缓存
+					</a>
+				</li>
+				<li class="mui-table-view-cell" v-tap="goPrivacyStatement">
+					<a class="mui-navigate-right">
+						隐私声明
+					</a>
+				</li>
+				<li class="mui-table-view-cell" v-tap="goServiceterm">
+					<a class="mui-navigate-right">
+						服务条款
+					</a>
+				</li>
+			</ul>
+			<div class="quit-btn">
+				<button id='quit' class="mui-btn mui-btn-block mui-btn-primary" v-tap="exitLogon">退出当前帐号</button>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../../js/mobile/mycenter/setting.js" ></script>
+	</body>
+
+</html>

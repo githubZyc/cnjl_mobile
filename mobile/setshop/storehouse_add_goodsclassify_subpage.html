@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-样品库子页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/imgload.css" type="text/css"/>
+		<link rel="stylesheet" href="../../css/mobile/no_data.css" type="text/css" />
+		<link rel="stylesheet" href="../../css/mobile/setshop/storehouse_add_goodsclassify.css" type="text/css"/>
+	</head>
+
+	<body style="background: white">
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div id="" class="mui-scroll">
+				<div id="content1">
+					<div class="no-data" v-if="commoditySamples.length==0">
+						<img src="../../images/tab_10.png" />
+						<p>暂无商品</p>
+					</div>
+					<template v-if="commoditySamples.length>0">
+						<div class="mui-row goods-classify" id="div-list">
+							<div class="mui-pull-left" v-for="commodity in commoditySamples" v-tap="goCommodityDetail(commodity)">
+								<div class="y-smallimg">
+									<img class="anim_opacity" :data-src="commodity.sampleSmallImgUrl" src="../../images/commodity-sample/no.png" width="100" height="100" />
+								</div>
+								<p v-text="commodity.commodityName"></p>
+							</div>
+						</div>
+					</template>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/lazy-load-img.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mobile/setshop/storehouse_add_goodsclassify_subpage.js" type="text/javascript" charset="utf-8"></script>
+</html>

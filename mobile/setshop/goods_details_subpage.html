@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-开店子页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/imgload.css"/>
+		<link rel="stylesheet" href="../../css/mobile/setshop/goods_details.css" />
+	</head>
+	<body style="background: #f2f2f2;">
+		<div class="mui-content">
+			<div class="add-product-photo">
+				<div class="">
+					<div class="">
+						<img :src="commodityMainImg" onerror="src='../../images/commodity-sample/no.png'" class="anim_opacity" />
+					</div>
+					<h5 v-text="commodity.commodityName"></h5>
+					<p v-text="'￥'+commodity.unitPrice+'/'+commodity.unit"></p>
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">商品介绍
+							<span class="mui-pull-right" v-text="commodity.commodityDescribe"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="mui-table-view address-distance">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label v-text="commodity.shopName"></label>
+							<input type="text" readonly="readonly" class="" :placeholder="commodity.distance">
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+
+					<div class="mui-input-row">
+						<label>购买数量</label>
+						<div class="mui-numbox" data-numbox-min='0'>
+							<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+							<input class="mui-input-numbox" type="number" />
+							<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+						</div>
+					</div>
+				</li>
+				<!--<li class="mui-table-view-cell">
+
+					<div class="mui-input-row">
+						<label style="width: 20%;">备注</label>
+						<textarea style="width: 75%;" type="text" class="" placeholder="请输入备注信息"></textarea>
+					</div>
+				</li>-->
+			</ul>
+			<div id="map" class="map"></div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item"><span class="mui-icon-extra mui-icon-extra-cart"></span>购物车(<i>0</i>)</a>
+			<a class="mui-tab-item" v-tap="goMap" v-text="mapShow == true?'显示位置':'显示商品'"></a>
+			<a class="mui-tab-item mui-active">加入购物车</a>
+		</nav>
+	</body>
+	<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mobile/setshop/goods_details_subpage.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,133 @@
+/*头部*/
+.mui-bar-nav.mui-bar .mui-icon {
+    margin-left: -17px;}
+.mui-bar-nav {
+	box-shadow: none;
+	background: #fff;
+	padding: 0 15px;
+}
+
+.mui-bar-nav h1 {
+	font-size: 18px;
+	color: #000;
+}
+
+.mui-bar-nav button.mui-btn-link {
+	font-size: 15px;
+	color: #222;
+	border: none;
+}
+
+.mui-bar-nav a {
+	font-size: 15px;
+	color: #222;
+}
+/*内容*/
+.mui-bar-nav~.mui-content {
+    padding-bottom: 60px;
+}
+.mui-table-view-cell input[type='radio']{
+	right: 0;
+}
+.mui-table-view-cell label{
+	font-size: 16px;
+	color: #222;
+	padding-left: 0;
+}
+.mui-table-view-cell span{
+	top: 9px;
+	right: 36px;
+	position: absolute;
+	font-size: 16px;
+	color: #FF4510;
+}
+.mui-table-view-cell u{
+	top: 9px;
+	right: 96px;
+	position: absolute;
+	font-size: 16px;
+	color: #aaa;
+	text-decoration: line-through;
+	
+}
+.mui-table-view-cell:after{
+	left: 15px;
+}
+/*单选框样式*/
+.mui-radio input[type=radio]:checked:before {
+    content: '\e442';
+    color: #ff4e0c;
+}
+/*价格合计*/
+
+.total-price{
+	background-color: #fff;	
+	padding-bottom: 28px;
+}
+.total-price p{
+	font-size: 36px;	
+	color: #FF4510;
+	text-align: center;
+}
+.total-price div{
+	margin-top: 11px;
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 0;
+}
+
+.total-price div img {
+	margin-top: 8px;
+}
+
+.total-price div span {
+	font-size: 15px;
+	color: #aaa;
+}
+
+/*支付方式*/
+.pay-method ul.mui-table-view {
+	margin-top: 11px;
+}
+.pay-method li:first-child {
+	font-size: 16px;
+	color: #222;
+}
+
+.pay-method li:not(:first-child) {
+	font-size: 15px;
+	color: #222;
+}
+
+.pay-method li:not(:first-child) img {
+	vertical-align: middle;
+	margin-right: 15px;
+}
+.pay-method .mui-table-view-cell:after {
+    left: 15px;
+}
+
+.pay-method .mui-radio input[type=radio] {
+	right: 15px;
+}	
+.mui-table-view:after{
+	height: 0;
+}
+/*按钮*/
+.mui-bar-tab.mui-bar{
+	box-shadow: none;
+	padding: 0;
+}
+.mui-bar .mui-btn-block{
+	padding: 0;
+}
+.mui-bar-tab button{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	border: none;
+	background: linear-gradient(to right,#ff4510,#ff6900);
+	color: #fff;
+	font-size: 18px;
+	line-height: 50px;
+}

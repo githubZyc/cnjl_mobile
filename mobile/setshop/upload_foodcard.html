@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-开店子页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/mui.picker.css" />
+		<link rel="stylesheet" href="../../css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../../css/mobile/setshop/upload_foodcard.css" />
+	</head>
+
+	<body style="background: #fff;">
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">食品流通许可证</h1>
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		</header>
+		<div class="mui-content">
+			<div class="idcard">
+				<div class="idcard-picture" id="idcard-food" v-tap='foodCard'>
+					<img :src="foodCardBase64" onerror="src='../../images/food_card_03.png'"  width="250px" height="180px"/>
+				</div>
+				<p>上传食品流通许可证</p>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<div class="save-btn">
+				<button class="mui-btn mui-btn-block mui-btn-primary" v-tap="upLoadFoodCard">确定</button>
+			</div>
+		</nav>
+		<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mobile/setshop/upload_foodcard.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

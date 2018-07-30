@@ -1,0 +1,116 @@
+.mui-bar-nav{
+	box-shadow: none;
+	background: #fff;
+}
+.mui-bar-nav h1{
+	font-size: 18px;
+	color: #000;
+}
+.mui-bar-nav a{
+	color: #000;
+}
+.mui-bar-nav~.mui-content {
+    padding-top: 65px;
+    padding-bottom: 50px;
+}
+/*商品主图*/
+.add-product-photo{
+	background: #fff;
+	height: 190px;
+	width: 100%;
+	padding-top: 1px;
+}
+.add-product-photo div{
+	height: 150px;
+	margin: 10px auto 0;
+	text-align: center;
+	width: 240px;
+	/*border: 1px solid #e1e1e1;*/
+}
+.add-product-photo div img{
+	/*width:  100%;*/
+	max-height: 100%;
+	/*margin-top: 30px;
+	margin-bottom: 20px;*/
+	max-width: 100%;
+}
+/*商品详细信息*/
+.mui-table-view{
+	margin-top: 11px;
+	padding-left: 15px;
+}
+.mui-table-view .mui-table-view-cell{
+	height: 50px;
+	line-height: 50px;
+	padding: 0;
+	margin: 0;
+}
+.mui-table-view .mui-table-view-cell .mui-input-row label{
+	font-size: 16px;
+	color: #222;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+}
+.mui-table-view .mui-table-view-cell .mui-input-row input{
+	font-size: 16px;
+	color: #aaa;
+    margin-right: 15px;
+    text-align: right;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+    width: 60%;
+}
+.mui-table-view .mui-table-view-cell .mui-input-row textarea{
+	font-size: 16px;
+	color: #aaa;
+    text-align: right;
+    padding: 0;
+    margin: 10px 15px 10px 0;
+    height: 30px;
+}
+::-webkit-input-placeholder{
+	font-size: 16px;
+	color: #aaa;
+}
+.mui-table-view .mui-table-view-cell .mui-navigate-right .mui-input-row input{
+	margin-right: 40px;
+	width: 50%;
+}
+.mui-table-view-cell:after{
+	left: 0;
+	background: #E1E1E1;
+}
+.mui-table-view-cell>a:not(.mui-btn){
+	margin: 0;
+	padding: 0;
+}
+.mui-table-view-cell>a:not(.mui-btn).mui-active,.mui-table-view-cell.mui-active{
+	background: transparent;
+}
+.mui-table-view:before,.mui-table-view:after{
+	height: 0;
+}
+.mui-bar{
+	bottom: 0;
+	box-shadow: none;
+	padding: 0;
+	height: 50px;
+}
+.mui-bar .mui-btn-block{
+	top: 0;
+}
+ .sure-btn button.mui-btn.mui-btn-block {
+	background: linear-gradient(to right, #ff4510,#ff6900);
+	height: 50px;
+	border: none;
+	line-height: 50px;
+	border-radius: initial;
+	padding: 0;
+}
+/*上下架按钮*/
+.mui-switch-blue.mui-active {
+    border: 2px solid #00e567;
+    background-color: #00e567;
+}

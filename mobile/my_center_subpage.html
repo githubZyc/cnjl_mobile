@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-修改信息</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/mui.css">
+		<link rel="stylesheet" href="../css/mobile/mycenter.css" />
+	</head>
+
+	<body style="background-color:#f2f2f2;">
+		<header class="mui-bar mui-bar-transparent">
+			<ul class="personal-name mui-table-view mui-pull-left">
+				<li class="mui-table-view-cell  mui-media" v-tap="goPersonalMessage">
+					<a class="mui-navigate-right">
+						<div class="mui-media-object mui-pull-left">
+							<img class="" :src="customber.heartImage" onerror="src='../images/personal_photo_default_03.png'" >
+						</div>
+						<div class="mui-media-body" v-text="customber.customberName"></div>
+					</a>
+				</li>
+			</ul>
+			<!-- 消息按钮 -->
+			<div class="index_mess mui-pull-right" v-tap="developing">
+				<a href="javascript:;" style="position:relative;">
+					<img src="../images/index_meg_icon_03.png">
+					<e></e>
+				</a>
+			</div>
+		</header>
+		<div class="mui-content">
+			<div class="mui-scroll">
+				<div class="personal-cont">
+					<div id="personal-mess" class="personal-mess">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<p>账户余额(元)</p>
+								<a class="mui-navigate-right" v-tap="goBalance">
+									3541.09
+								</a>
+							</li>
+							<li class="mui-table-view-cell" v-tap="goRedPacket">
+								<p>红包(元)</p>
+								<a class="mui-navigate-right">
+									354
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-row center-classify" v-tap="developing">
+						<div class="mui-col-xs-2 mui-col-sm-2">
+							<a href="javascript:void(0);">
+								<div class="y-smallimg">
+									<img src="../images/mycenter_icon_04.png" width="24px" />
+								</div>
+							</a>
+							<p>待付款</p>
+						</div>
+						<div class="mui-col-xs-2 mui-col-sm-2" v-tap="developing">
+							<a href="javascript:void(0);">
+								<div class="y-smallimg">
+									<img src="../images/mycenter_icon_12.png" width="24px" />
+									<span class="num">3</span>
+								</div>
+							</a>
+							<p>待收货</p>
+						</div>
+						<div class="mui-col-xs-2 mui-col-sm-2" v-tap="developing">
+							<a href="javascript:void(0);">
+								<div class="y-smallimg">
+									<img src="../images/mycenter_icon_09.png" width="24px" />
+								</div>
+							</a>
+							<p>待评价</p>
+						</div>
+						<div class="mui-col-xs-2 mui-col-sm-2" v-tap="developing">
+							<a href="javascript:void(0);">
+								<div class="y-smallimg">
+									<img src="../images/my_center_index_10.png" width="23px" />
+								</div>
+							</a>
+							<p>退换</p>
+						</div>
+						<div class="mui-col-xs-2 mui-col-sm-2" v-tap="developing">
+							<a href="javascript:void(0);">
+								<div class="y-smallimg">
+									<img src="../images/mycenter_icon_06.png" width="20px" />
+								</div>
+							</a>
+							<p>全部</p>
+						</div>
+					</div>
+
+				</div>
+				<ul class="mui-table-view list_geren">
+					<li class="mui-table-view-cell mui-media">
+						<a href="#add-shop" class="mui-navigate-right" v-tap="developing">
+							<img class="mui-media-object mui-pull-left" src="../images/my_center_index_03.png" width="22px">
+							<div class="mui-media-body">
+								我是营养师
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#add-shop" class="mui-navigate-right" v-tap="developing">
+							<img class="mui-media-object mui-pull-left" src="../images/my_center_index_07.png" width="23px">
+							<div class="mui-media-body">
+								我的菜谱
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#add-shop" class="mui-navigate-right" v-tap="goCustomerList">
+							<img class="mui-media-object mui-pull-left" src="../images/my_center_index_11.png" width="24px">
+							<div class="mui-media-body">
+								我的顾客
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#add-shop" class="mui-navigate-right" v-tap="developing">
+							<img class="mui-media-object mui-pull-left" src="../images/my_center_index_15.png" width="21px">
+							<div class="mui-media-body">
+								入驻申请
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#add-shop" class="mui-navigate-right" v-tap="goWallet">
+							<img class="mui-media-object mui-pull-left" src="../images/mycenter_icon_19.png" width="22px">
+							<div class="mui-media-body">
+								我的钱包
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media" v-tap="goAddressManager">
+						<a class="mui-navigate-right">
+							<img class="mui-media-object mui-pull-left" src="../images/add_address_03.png" width="22px">
+							<div class="mui-media-body">
+								地址管理
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a class="mui-navigate-right">
+							<img class="mui-media-object mui-pull-left" src="../images/mycenter_icon_22.png" width="22px">
+							<div class="mui-media-body">
+								客服中心
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media" v-tap="goSystemSet">
+						<a class="mui-navigate-right">
+							<img class="mui-media-object mui-pull-left" src="../images/mycenter_icon_25.png" width="24px">
+							<div class="mui-media-body">
+								系统设置
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media" v-tap="goAboutUs">
+						<a class="mui-navigate-right">
+							<img class="mui-media-object mui-pull-left" src="../images/mycenter_icon_29.png" width="23px">
+							<div class="mui-media-body">
+								关于我们
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mobile/my_center_subpage.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟网络-吉犁APPV1.0-个人中心页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/mui.picker.css" />
+		<link rel="stylesheet" href="../../css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../../css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../../css/mobile/mycenter/personal_message.css" />
+	</head>
+
+	<body style="background: #f2f2f2;">
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">个人信息</h1>
+			<button class="mui-btn mui-btn-link mui-pull-right" v-tap="saveShop">保存</button>
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view list-personal">
+				<li class="mui-table-view-cell" v-tap="uploadHeaderImage">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>头像</label>
+							<div>
+								<img :src="customber.heartImage" onerror="src='../../images/personal_photo_default_03.png'" width="100%"/>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell" >
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>昵称</label>
+							<input type="text"  class=""  id="customberName-inp" :placeholder="customber.customberName">
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view list-personal">
+				<li class="mui-table-view-cell" v-tap="goValidCustomberPhone(customber.phone)">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>手机</label>
+							<input type="text" class="" :placeholder="customber.phone == null ? '未绑定手机号' : customber.phone" readonly="readonly">
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>民族</label>
+							<input  type="text" id="nation-inp" class="" :placeholder="customber.nation == null ? '未填写' : customber.nation">
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell" id="sex-choose" v-tap="showSexSelect">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>性别</label>
+							<input type="text" id="sex-inp"  class="" :placeholder="customber.sex=='0001001'?'男':'女'" readonly="readonly">
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>身高</label>
+							<input type="text" id="height-inp" class="" :placeholder="customber.height == null ? '未填写' : customber.height">
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell" id="education-choose" v-tap="showEducationSelect" >
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>文化</label>
+							<input type="text" id="education-inp" class="" :placeholder="customber.education == null ? '未填写' : customber.education" readonly="readonly" >
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>职业</label>
+							<input type="text"  id="job-inp" class="" :placeholder="customber.job == null ? '未填写' : customber.job">
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell"  v-tap="showBirthdaySelect">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>生日</label>
+							<input type="text" id="birthday-inp" class="" :placeholder="birthday == null ? '未填写' : birthday" readonly="readonly">
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell" id="hobby-choose" v-tap="showHobbySelect">
+					<a class="mui-navigate-right">
+						<div class="mui-input-row">
+							<label>口味</label>
+							<input type="text" id="hobby-inp" class="" :placeholder="customber.hobby == null ? '未填写' : customber.hobby" readonly="readonly" >
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script src="../../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/mui.picker.js"></script>
+		<script src="../../js/mui.poppicker.js"></script>
+		<script src="../../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mobile/mycenter/personal_message.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

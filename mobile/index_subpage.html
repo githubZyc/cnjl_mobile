@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>中菜鸟网络-吉犁APPV1.0-首页子页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/mui.css" />
+		<link rel="stylesheet" type="text/css" href="../css/imgload.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mobile/no_data.css"/>
+		<link rel="stylesheet" href="../css/mobile/index.css" />
+	</head>
+
+	<body style="background-color:#f2f2f2;">
+		<header id="header" class="mui-bar mui-bar-transparent">
+			<div class="mui-row" style="transform: translate3d(0px, 0px, 0px)">
+				<div class="index_address" v-tap="selectLocalPosition">
+					<span class="mui-left" v-text="!localPosition.district?localPosition.city:localPosition.district"></span><img class="mui-left" src="../images/index_triangle_03.png" width="10px" />
+				</div>
+				<div class="mui-input-row mui-search"   v-tap="goSearchList('')">       <!--  v-tap="showSearch"  -->
+					<input type="search" placeholder="搜索商品" readonly="readonly">
+				</div>
+				<!-- 消息按钮 -->
+				<div class="index_mess">
+					<a href="javascript:;" style="position:relative;">
+						<img src="../images/index_meg_icon_03.png" style="vertical-align: middle;">
+						<e style="width:7px;height:7px;background:red;border-radius:50%;position:absolute;right:-2px;top:0px;"></e>
+					</a>
+				</div>
+			</div>
+		</header>
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--轮播图片-->
+				<div id="slider" class="mui-slider">
+					<div class="mui-slider-group">
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../images/banner_01.png">
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../images/banner_01.png">
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+				<!--商品分类-->
+				<div class="goods">
+					<div class="mui-row index_classify">
+						<div class="mui-col-xs-2 mui-col-sm-2" v-tap="goSearchList('01')">
+							<a href="javascript:void(0);">
+								<div class="y-smallimg">
+									<img src="../images/index_img_05.png" />
+								</div>
+							</a>
+							<p>蔬菜</p>
+						</div>
+						<div class="mui-col-xs-2 mui-col-sm-2" v-tap="goSearchList('02')">
+							<a href="javascript:void(0);">
+								<div class="y-smallimg">
+									<img src="../images/index_img_07.png" />
+								</div>
+							</a>
+							<p>水果</p>
+						</div>
+						<div class="mui-col-xs-2 mui-col-sm-2" v-tap="goSearchList('03')">
+							<a href="javascript:void(0);">
+								<div class="y-smallimg">
+									<img src="../images/index_img_09.png" />
+								</div>
+							</a>
+							<p>蛋肉水产</p>
+						</div>
+						<div class="mui-col-xs-2 mui-col-sm-2" v-tap="goSearchList('03')">
+							<a href="javascript:void(0);">
+								<div class="y-smallimg">
+									<img src="../images/index_img_11.png" />
+								</div>
+							</a>
+							<p>肉类</p>
+						</div>
+						<div class="mui-col-xs-2 mui-col-sm-2" v-tap="goSearchList('04')">
+							<a href="javascript:void(0);">
+								<div class="y-smallimg">
+									<img src="../images/index_img_13.png" />
+								</div>
+							</a>
+							<p>干货</p>
+						</div>
+					</div>
+					<div class="mui-row index_classify" v-tap="goSearchList('05')">
+						<div class="mui-col-xs-2 mui-col-sm-2">
+							<a href="javascript:void(0);">
+								<div class="y-smallimg">
+									<img src="../images/index_img_20.png" />
+								</div>
+							</a>
+							<p>熟食</p>
+						</div>
+						<div class="mui-col-xs-2 mui-col-sm-2" v-tap="goSearchList('06')">
+							<a href="javascript:void(0);">
+								<div class="y-smallimg">
+									<img src="../images/index_img_21.png" />
+								</div>
+							</a>
+							<p>活海鲜</p>
+						</div>
+						<div class="mui-col-xs-2 mui-col-sm-2" v-tap="goSearchList('07')">
+							<a href="javascript:void(0);">
+								<div class="y-smallimg">
+									<img src="../images/index_img_22.png" />
+								</div>
+							</a>
+							<p>冰海鲜</p>
+						</div>
+						<div class="mui-col-xs-2 mui-col-sm-2" v-tap="goSearchList('11')">
+							<a href="javascript:void(0);">
+								<div class="y-smallimg">
+									<img src="../images/index_img_23.png" />
+								</div>
+							</a>
+							<p>药膳</p>
+						</div>
+						<div class="mui-col-xs-2 mui-col-sm-2" v-tap="goSearchList('')">
+							<a href="javascript:void(0);">
+								<div class="y-smallimg">
+									<img src="../images/index_img_24.png" />
+								</div>
+							</a>
+							<p>全部</p>
+						</div>
+					</div>
+
+				</div>
+				<!--列表展示-->
+				<div class="mui-row list_title">
+					<img src="../images/index_img_31.png" height="4px" />
+					<span class="">
+						您附近的商品
+					</span>
+					<img src="../images/index_img_34.png" height="4px" />
+				</div>
+				<template v-if='commoditys.length<=0'>
+					<div class="no-data">
+						<img src="../images/tab_10.png"/>
+						<p>暂无数据</p>
+					</div>
+				</template>
+				<template v-if='commoditys.length>0'>
+					<ul class="mui-table-view" id="ul-list">
+						<li class="mui-table-view-cell mui-media" v-for="commodity in commoditys" v-tap="goCommodityDetal(commodity)">
+							<a href="javascript:;">
+								<div class="mui-media-object mui-pull-left">
+									<img class=" anim_opacity" :data-src="commodity.sampleSmallImgUrl==null?commodity.customCommodityUrl:commodity.sampleSmallImgUrl" src="../images/commodity-sample/no.png" >
+								</div>
+								<div class="mui-media-body" >
+									{{commodity.commodityName}}
+									<p class='mui-ellipsis' v-text="commodity.shopName"></p>
+									<div class="mui-row"><span class="mui-pull-left" v-text="commodity.distance"></span><span class="mui-pull-left" v-text="commodity.distributionPrice"></span></div>
+									<div class="mui-row"><span class="mui-pull-left" v-text="'￥'+commodity.unitPrice+'/'+commodity.unit"></span><img class="mui-pull-right" src="../images/index_img_42.png" width="21px" /></div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</template>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/lazy-load-img.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/immersed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/muiHelper.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/Vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/Vue/vue-tap-click.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/mobile/index_subpage.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
